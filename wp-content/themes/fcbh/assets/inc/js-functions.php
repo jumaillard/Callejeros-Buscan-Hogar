@@ -1,5 +1,5 @@
 <?php
-function comercio_script() {
+function nuestrosjs_script() {
     if (!is_admin()) {
         wp_deregister_script('jquery');
         wp_enqueue_script('jq', 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js', true);
@@ -9,4 +9,4 @@ function comercio_script() {
         wp_enqueue_script('mi-archivo', get_template_directory_uri() . '/assets/librerias/js/mi-archivo.js', null, true);
     }
 }
-add_action('wp_enqueue_scripts', 'comercio_script');
+add_action('wp_enqueue_scripts', 'nuestrosjs_script');
