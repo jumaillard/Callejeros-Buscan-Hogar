@@ -11,20 +11,23 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'fcbh' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'fcbh' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'fcbh' ), 'fcbh', '<a href="http://ju.maillard@duocuc.cl">div-design</a>' );
-				?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="container-fluid">
+		<div class="row text-center">
+			<div class="col-12">
+				<?php the_custom_logo(); ?>
+			</div>
+			<div class="col-12">
+				<i class="bi bi-facebook fs-1"></i>
+				<i class="bi bi-instagram fs-1"></i>
+				<i class="bi bi-tiktok fs-1"></i>
+			</div>
+			<div class="col-12">
+				<p>contacto@fundacioncbh.cl</p>
+			</div>
+			<div class="col-12">
+				<p>Obtén información sobre la Ley de Tenencia Responsable de Mascotas y Animales de Compañía haciendo clic <a href="">aquí</a></p>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
