@@ -25,11 +25,12 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'fcbh' ); ?></a>
 
-	<header id="masthead" class="container">
+	<header id="masthead" class="container-fluid">
 		<div class="row">
-			<div class="col-12 d-flex align-items-center py-3 flex-wrap">
+			<div class="col-12 d-flex align-items-center px-5 py-3 flex-wrap">
 				<div class="col-12 col-lg-5">
-					<?php the_custom_logo(); ?>
+					<h1><?php the_custom_logo(); ?></h1>
+			
 				</div>
 				<div class="col-12 col-lg-7">
 					<nav class="navbar navbar-expand-lg">

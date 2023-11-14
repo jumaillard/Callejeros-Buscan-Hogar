@@ -1,5 +1,17 @@
+$tipografia-titulos: 'Poppins', sans-serif;
+$tipografia-parrafos: 'Rubik', sans-serif;
+$bg-primario: #ffffff;
+$bg-secundario: rgba(201, 193, 230, 0.6);
+$texto: #2D2E6F;
+
+
 body{
-    background-color: #fff;
+    background-color: $bg-primario;
+    color: $texto;
+    font-family: $tipografia-parrafos;
+    h1,h2,h3,h4,h5,h6{
+        font-family: $tipografia-titulos;
+    }
 }
 header{
     .custom-logo-link {
@@ -7,12 +19,30 @@ header{
         width: 300px;
         height: auto;
     }
-    nav{
-        li{
+    nav {
+        li {
             padding-right: 20px;
+    
+            .nav-link {
+                color: $texto;
+                border-bottom: 1px solid transparent; // Asegúrate de establecer un valor inicial para la propiedad border-bottom
+                transition: border-bottom 0.3s ease-in-out;
+                &:hover {
+                    border-bottom: 1px solid $texto;
+                }
+            }
         }
     }
+    
 }
 footer{
-    background-color: rgba(201, 193, 230, 0.6);
+    background-color: $bg-secundario;
+    .aqui{
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .aqui:visited{
+        color: $texto;
+    }
+
 }
