@@ -31,6 +31,73 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
+<section class="container_grid my-5">
+  <a href="#" class="area_centro">
+    <h3>HAZ UNA DONACIÓN</h3>
+    <p>Donar para marcar la diferencia en las vidas de animales necesitados y apoyar nuestra causa.</p>
+	<img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-3.png" alt=""></a>
+  
+  <a href="#" class="area_izquierda">
+	<h3>PRÓXIMOS EVENTOS</h3>
+    <p>Descubre nuestros próximos eventos: jornadas de adopción, charlas y esterilizaciones masivas.</p>
+	<img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/Black-Dog-PNG-High-Quality-Image-1.png" alt=""></a>
+  <a href="#" class="area_derecha">
+	<h3>ADOPTA UN PELUDITO</h3>
+	<div>
+	<img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/kisspng-dog-pet-puppy-cat-dog-5a7525d302cf50.png" alt="">
+	<p> Adopta un peludito y dale un hogar lleno de amor y cuidado, donde pueda disfrutar de una vida llena de felicidad y compañía</p>
+	</div>
+      </a>
+  <a href="#" class="area_derecha_inferior">
+	<h3>HAZTE SOCIO</h3>
+    <p>Únete a nuestra causa y hazte socio para ser parte activa en la protección de los animales necesitados. Juntos, podemos lograr un impacto duradero en sus vidas.</p>
+	<img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-1.png" alt=""></a>
+  <a href="#" class="area_izquierda_inferior">
+	<h3>CONTACTÁNOS</h3>
+	<div>
+  <img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-2.png" alt="">
+  <p>
+    Si tienes alguna duda, deseas ser voluntario o necesitas más información no dudes en contactarnos 
+  </p>
+	</div>
+	</a>
+</section>
+
+<section class="container d-flex flex-column justify-content-around align-items-center my-5 text-center">
+	<h3 class="my-3 fw-bold">Visítanos en Redes Sociales</h3>
+	<p class="my-3 w-75">Síguenos en Instagram para estar al tanto de nuestros próximos eventos y oportunidades para unirte a nuestra causa. ¡Te esperamos en nuestra cuenta para mantenerte informado!</p>
+	<img class="my-3" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/callejeros-instagram-1.png" alt="logo fcbh">
+	<div class="row my-3 p-1">
+		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
+		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
+		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
+		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
+		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
+		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
+		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
+		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
+	</div>
+	<button class="btn btn_cargar_mas my-3">Cargar Más</button>
+</section>
+<section class="ripley_section my-5 row">
+<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+	<a href="https://simple.ripley.cl">
+	<img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ripley-puntos-cbh-1.png" alt="">
+	</a>
+</div>
+<div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+	<h4>Haz tus compras en Ripley utilizando el código de la fundación</h4>
+	<p>
+	Cuando realicen sus compras en las tiendas, simplemente proporcionen el <span class="fw-bold">código 415627268</span> para que acumulemos puntos, y lo más beneficioso es que no se descontarán de sus propios puntos
+	</p>
+</div>
+</section>
+
+<section class="seccion_banner my-5">
+	<a href="https://chile.vitalcan.com/">
+	<img class="w-100" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/vitalcan-1.png" alt="banner publicidad vitalcan">
+	</a>
+</section>
 	</main><!-- #main -->
 
 <?php
