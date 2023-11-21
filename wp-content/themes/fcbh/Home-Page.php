@@ -79,7 +79,7 @@ get_header();
 	</div>
 	<button class="btn btn_cargar_mas my-3">Cargar Más</button>
 </section>
-<section class="ripley_section my-5 row">
+<section class="ripley_section my-5">
 <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
 	<a href="https://simple.ripley.cl">
 	<img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ripley-puntos-cbh-1.png" alt="">

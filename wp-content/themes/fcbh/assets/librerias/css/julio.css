@@ -1,7 +1,7 @@
 .container_grid {  
     display: grid;
     grid-template-columns: 0fr 0fr 0fr;
-    gap: 10px 10px;
+    gap: 15px 15px;
     grid-auto-flow: row;
     grid-template-areas:
       "area_izquierda area_derecha area_derecha"
@@ -53,7 +53,7 @@
   .area_izquierda { 
     grid-area: area_izquierda; 
     height: 100%;
-    width: 200px;
+    width: 300px;
     background-color: #d2d2fb56;
     border: solid 10px #D2D2FB;
     border-radius: 3px;
@@ -110,7 +110,7 @@
   .area_derecha_inferior { 
     grid-area: area_derecha_inferior;
     height: 100%;
-    width: 200px;
+    width: 300px;
     background-color: #9fa1f863;
     border: solid 10px #9FA0F8;
     border-radius: 3px;
@@ -177,6 +177,7 @@
     padding: 2%;
     flex-wrap: wrap;
     transition: box-shadow ease-in-out 0.4s;
+    width: 100%;
  }
 .ripley_section:hover{
     box-shadow: 0 0 4px 4px  #C9C1E6;
