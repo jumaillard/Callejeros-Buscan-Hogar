@@ -51,13 +51,30 @@ get_header();
 			</div>
 		</div>
 	</section>
-	<section class="container pt-5">
-		<div class="filtros-adoptanos d-flex justify-content-around">
-			<a href="#" class="boton-filtro text-center"><i class="fa-solid fa-dog pe-3" style="color: #ffffff;"></i>Cachorros</a>
-			<a href="#" class="boton-filtro text-center"><i class="fa-solid fa-dog pe-3" style="color: #ffffff;"></i>Perros</a>
-			<a href="#" class="boton-filtro text-center"><i class="fa-solid fa-cat pe-3" style="color: #ffffff;"></i>Gatos</a>
+	<section class="container pt-5 navbar navbar-expand-lg">
+		<button class="m-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<div id="navbarNav"
+				class="collapse navbar-collapse filtros-adoptanos d-flex justify-content-md-around justify-content-around pt-4 pb-3">
+				<ul class="navbar-nav">
+					<li class="nav-item p-2 p-md-5"><a href="#" class="nav-link boton-filtro text-center text-white"><i
+								class="fa-solid fa-dog pe-3" style="color: #ffffff;"></i>Cachorros</a></li>
+					<li class="nav-item p-2 p-md-5"><a href="#" class="nav-link boton-filtro text-center text-white"><i
+								class="fa-solid fa-dog pe-3" style="color: #ffffff;"></i>Perros</a></li>
+					<li class="nav-item p-2 p-md-5"><a href="#" class="nav-link boton-filtro text-center text-white"><i
+								class="fa-solid fa-cat pe-3" style="color: #ffffff;"></i>Gatos</a></li>
+				</ul>
+			</div>
 		</div>
 	</section>
+	<div class="container">
+		<div class="col-12 col-md-4">
+		<?php include get_template_directory(). '/assets/modulos/modulo-animales/loop-animales.php'; ?>
+		</div>
+		</div>
 </main><!-- #main -->
 
 <?php

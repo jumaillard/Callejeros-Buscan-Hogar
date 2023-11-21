@@ -1,36 +1,30 @@
 .banner-adoptanos {
-  background-color: rgba(201, 193, 230, 0.5);
-}
-.banner-adoptanos h2 {
-  font-size: 40px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-}
-.banner-adoptanos p {
-  font-size: 20px;
-  font-family: "Rubik", sans-serif;
-}
+  background-color: rgba(201, 193, 230, 0.5); }
+  .banner-adoptanos h2 {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700; }
+  .banner-adoptanos p {
+    font-size: 20px;
+    font-family: "Rubik", sans-serif; }
 
 .caja-adoptanos {
   border: 10px solid white;
   height: 167px;
   width: 167px;
-  border-radius: 5px;
-}
-.caja-adoptanos .contador {
-  font-weight: 700;
-  font-size: 32px;
-  justify-content: center;
-  margin: 2%;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-}
-.caja-adoptanos .texto-caja-adoptanos {
-  font-size: 22px;
-  text-align: center;
-  font-family: "Rubik", sans-serif;
-  line-height: 26px;
-}
+  border-radius: 5px; }
+  .caja-adoptanos .contador {
+    font-weight: 700;
+    font-size: 32px;
+    justify-content: center;
+    margin: 2%;
+    text-align: center;
+    font-family: "Poppins", sans-serif; }
+  .caja-adoptanos .texto-caja-adoptanos {
+    font-size: 22px;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    line-height: 26px; }
 
 .boton-filtro {
   background-color: #2D2E6F;
@@ -39,12 +33,11 @@
   color: white;
   border-radius: 50px;
   width: 183px;
-  transition: 0.3s;
+  transition: .3s;
   font-family: "Rubik", sans-serif;
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 .boton-filtro:hover {
-  transform: scale(1.1);
-  color: white;
-}/*# sourceMappingURL=jorge.css.map */
+  transform: scale(1.03); }
+
+/*# sourceMappingURL=jorge.css.map */
