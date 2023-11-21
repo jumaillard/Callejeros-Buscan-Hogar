@@ -14,7 +14,7 @@
 	<footer id="colophon" class="container-fluid py-3">
 		<div class="row text-center">
 			<div class="col-12">
-				<?php the_custom_logo(); ?>
+				<span class="logo-footer"><?php the_custom_logo(); ?></span>
 			</div>
 			<div class="col-12">
 				<i class="bi bi-facebook fs-1"></i>

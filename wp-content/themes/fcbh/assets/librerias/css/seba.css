@@ -35,6 +35,9 @@ footer .aqui {
 footer .aqui:visited {
   color: #2D2E6F;
 }
+footer .logo-footer img {
+  width: 200px;
+}
 
 .post, .page {
   margin: 0;

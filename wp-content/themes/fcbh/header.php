@@ -27,12 +27,12 @@
 
 	<header id="masthead" class="container-fluid">
 		<div class="row">
-			<div class="col-12 d-flex align-items-center px-5 py-3 flex-wrap">
-				<div class="col-12 col-lg-4">
+			<div class="col-12 d-flex align-items-center px-5 py-3 flex-wrap justify-content-between">
+			
 					<h1><?php the_custom_logo(); ?></h1>
 			
-				</div>
-				<div class="col-12 col-lg-8">
+			
+			
 					<nav class="navbar navbar-expand-lg">
 						<div class="container-fluid">
 							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,8 +56,8 @@
 								<a class="nav-link" href="#">Iniciar Sesión</a>
 								</li>
 							</ul>
-							</div>
 						</div>
+						
 					</nav>
 				</div>
 			</div>
