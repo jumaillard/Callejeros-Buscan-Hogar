@@ -57,6 +57,13 @@ footer{
     margin: 0;
 }
 
+.navbar-toggler{
+    background-color: $bg-secundario;
+    color: $texto;
+    border: 1px solid $texto;
+
+}
+
 @media (min-width: 0px) and (max-width: 760px) {
     header .custom-logo-link {
       display: inline-block;
