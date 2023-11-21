@@ -41,4 +41,8 @@ footer .logo-footer img {
 
 .post, .page {
   margin: 0;
+}
+
+.navbar-toggler {
+  background-color: rgba(201, 193, 230, 0.6);
 }/*# sourceMappingURL=seba.css.map */
