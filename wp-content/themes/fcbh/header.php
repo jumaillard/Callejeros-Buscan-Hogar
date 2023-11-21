@@ -25,22 +25,16 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'fcbh' ); ?></a>
 
-	<header id="masthead" class="container-fluid">
-		<div class="row">
-			<div class="col-12 d-flex align-items-center px-5 py-3 flex-wrap justify-content-between">
-			
-					<h1><?php the_custom_logo(); ?></h1>
-			
-			
-			
-					<nav class="navbar navbar-expand-lg">
-						<div class="container-fluid">
-							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarNav">
-							<ul class="navbar-nav">
-								<li class="nav-item">
+	<header id="masthead" class="container-fluid px-5">
+			<nav class="navbar navbar-expand-lg bg-transparent">
+  <div class="container-fluid">
+  <h1 class="navbar-brand"><?php the_custom_logo(); ?></h1>
+			    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
+      <li class="nav-item">
 								<a class="nav-link" href="#">Sobre Nosotros</a>
 								</li>
 								<li class="nav-item">
@@ -55,11 +49,9 @@
 								<li class="nav-item">
 								<a class="nav-link" href="#">Iniciar Sesión</a>
 								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
-			</div>
-		</div>
+      </ul>
+    </div>
+  </div>
+</nav>
 		
 	</header><!-- #masthead -->
