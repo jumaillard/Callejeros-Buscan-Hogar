@@ -44,7 +44,7 @@
 								<a class="nav-link" href="#">Sobre Nosotros</a>
 								</li>
 								<li class="nav-item">
-								<a class="nav-link" href="#">Adóptanos</a>
+								<a class="nav-link" href="http://localhost/fundacion-cbh/adoptanos/">Adóptanos</a>
 								</li>
 								<li class="nav-item">
 								<a class="nav-link" href="#">Próximos Eventos</a>

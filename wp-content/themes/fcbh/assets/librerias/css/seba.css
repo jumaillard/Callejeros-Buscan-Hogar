@@ -1,37 +1,30 @@
 body {
   background-color: #ffffff;
   color: #2D2E6F;
-  font-family: "Rubik", sans-serif;
-}
-body h1, body h2, body h3, body h4, body h5, body h6 {
-  font-family: "Poppins", sans-serif;
-}
+  font-family: "Rubik", sans-serif; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: "Poppins", sans-serif; }
 
 header .custom-logo-link {
   display: inline-block;
   width: 300px;
-  height: auto;
-}
+  height: auto; }
 header nav li {
-  padding-right: 20px;
-}
-header nav li .nav-link {
-  color: #2D2E6F;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.3s ease-in-out;
-}
-header nav li .nav-link:hover {
-  border-bottom: 1px solid #2D2E6F;
-  color: #2D2E6F;
-}
+  padding-right: 20px; }
+  header nav li .nav-link {
+    color: #2D2E6F;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease-in-out; }
+    header nav li .nav-link:hover {
+      border-bottom: 1px solid #2D2E6F;
+      color: #2D2E6F; }
 
 footer {
-  background-color: rgba(201, 193, 230, 0.6);
-}
-footer .aqui {
-  font-weight: bold;
-  text-decoration: none;
-}
-footer .aqui:visited {
-  color: #2D2E6F;
-}/*# sourceMappingURL=seba.css.map */
+  background-color: rgba(201, 193, 230, 0.6); }
+  footer .aqui {
+    font-weight: bold;
+    text-decoration: none; }
+  footer .aqui:visited {
+    color: #2D2E6F; }
+
+/*# sourceMappingURL=seba.css.map */

@@ -1,0 +1,50 @@
+$rubik: "Rubik", sans-serif;
+$poppins: "Poppins", sans-serif;
+
+.banner-adoptanos{
+    background-color: rgba(201, 193, 230, 0.5);
+    h2{
+        font-size: 40px;
+        font-family: $poppins;
+        font-weight: 700;
+    }
+    p{
+        font-size: 20px;
+        font-family: $rubik;
+    }
+}
+.caja-adoptanos{
+    border: 10px solid white;
+    height: 167px;
+    width: 167px;
+    border-radius: 5px;
+    .contador{
+        font-weight: 700;
+        font-size: 32px;
+        justify-content: center;
+        margin: 2%;
+        text-align: center;
+        font-family: $poppins;
+    }
+    .texto-caja-adoptanos{
+        font-size: 22px;
+        text-align: center;
+        font-family: $rubik;
+        line-height: 26px;
+    }
+}
+.boton-filtro{
+    background-color: #2D2E6F;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    width: 183px;
+    transition: .3s;
+    font-family: $rubik;
+    font-size: 20px;
+}
+.boton-filtro:hover{
+    transform: scale(1.1);
+    color: white;
+}
