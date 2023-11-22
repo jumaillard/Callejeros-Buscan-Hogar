@@ -1,0 +1,21 @@
+.card-adoptanos{
+  background-color: #C9C1E6;
+  padding: 10px;
+  transition: .3s;
+}
+.boton-card-adoptanos{
+  text-decoration: none;
+}
+.card-adoptanos:hover{
+  box-shadow: 0 0 10px 1px #8972dd;
+}
+.card-titulo-adoptanos{
+  font-size: 20px;
+  font-weight: 600;
+}
+.card-titulo-adoptanos span{
+  font-size: 12px;
+}
+.texto-card-adoptanos{
+  font-size: 16px;
+}

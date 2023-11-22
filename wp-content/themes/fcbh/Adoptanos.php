@@ -71,8 +71,10 @@ get_header();
 		</div>
 	</section>
 	<div class="container">
+		<div class="row">
 		<div class="col-12 col-md-4">
 		<?php include get_template_directory(). '/assets/modulos/modulo-animales/loop-animales.php'; ?>
+		</div>
 		</div>
 		</div>
 </main><!-- #main -->

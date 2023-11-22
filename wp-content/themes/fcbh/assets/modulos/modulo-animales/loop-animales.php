@@ -20,7 +20,7 @@ incrustar_hoja_estilos_comision();
         //si voy a paginar mi contenido
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         //cantidad de post por página
-        $post_per_page = 6; // -1 shows all posts
+        $post_per_page = 3; // -1 shows all posts
         //array del custom_post_type
         $args = array(
             //tipo de post_type que publicaremos
@@ -41,13 +41,16 @@ incrustar_hoja_estilos_comision();
         if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); //todo lo que este dentro de este loop, es la estructura que se mostrará?>
 
         
-		<div class="card card-adoptanos" style="width: 18rem; background-color: red;">
+		<a href="<?php the_permalink(); ?>" class="boton-card-adoptanos"><div class="card card-adoptanos" style="width: 18rem;">
 			<img class="card-img-top" src="<?php the_field('foto'); ?>" alt="Card image cap">
 			<div class="card-body body-card-adoptanos">
-				<h2><?php the_field('nombre'); ?></h2>
-				<p class="card-text"><?php the_field('descripcion'); ?></p>
+				<h2 class="card-titulo-adoptanos"><?php the_field('nombre'); ?><br>
+                <span><small><strong>Edad: </strong> <?php the_field('edad'); ?></small></span></h2>
+				<p class="texto-card-adoptanos">"<?php the_field('descripcion'); ?>"</p>
+				<p class="texto-card-adoptanos">Contacta a <?php the_field('encargado'); ?> para más información: <strong><?php the_field('telefono'); ?></strong></p>
+				<p class="texto-card-adoptanos"></p>
 			</div>
-		</div>
+		</div></a>
         
     <?php endwhile; endif; wp_reset_query()/*resetea la query para que empieze de 0*/; $wp_query = $temp //empieza de nuevo el loop?>
 

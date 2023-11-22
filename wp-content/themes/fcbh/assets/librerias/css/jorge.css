@@ -40,4 +40,28 @@
 .boton-filtro:hover {
   transform: scale(1.03); }
 
+.contenedor-ficha {
+  border: 10px solid #2D2E6F;
+  border-radius: 5px;
+  padding: 30px; }
+  .contenedor-ficha .contenido-ficha {
+    background-color: rgba(159, 160, 248, 0.6);
+    border-radius: 5px;
+    text-align: start;
+    line-height: 50px;
+    height: 40vh;
+    width: 50vh; }
+    .contenedor-ficha .contenido-ficha .titulo-ficha {
+      font-size: 32px;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif; }
+    .contenedor-ficha .contenido-ficha .texto-ficha {
+      font-size: 16px;
+      font-family: "Rubik", sans-serif; }
+
+.imagen-ficha {
+  border-radius: 5px;
+  height: 40vh;
+  width: 50vh; }
+
 /*# sourceMappingURL=jorge.css.map */

@@ -1,24 +1,28 @@
 $rubik: "Rubik", sans-serif;
 $poppins: "Poppins", sans-serif;
 
-.banner-adoptanos{
+.banner-adoptanos {
     background-color: rgba(201, 193, 230, 0.5);
-    h2{
+
+    h2 {
         font-size: 40px;
         font-family: $poppins;
         font-weight: 700;
     }
-    p{
+
+    p {
         font-size: 20px;
         font-family: $rubik;
     }
 }
-.caja-adoptanos{
+
+.caja-adoptanos {
     border: 10px solid white;
     height: 167px;
     width: 167px;
     border-radius: 5px;
-    .contador{
+
+    .contador {
         font-weight: 700;
         font-size: 32px;
         justify-content: center;
@@ -26,14 +30,16 @@ $poppins: "Poppins", sans-serif;
         text-align: center;
         font-family: $poppins;
     }
-    .texto-caja-adoptanos{
+
+    .texto-caja-adoptanos {
         font-size: 22px;
         text-align: center;
         font-family: $rubik;
         line-height: 26px;
     }
 }
-.boton-filtro{
+
+.boton-filtro {
     background-color: #2D2E6F;
     padding: 10px;
     text-decoration: none;
@@ -44,6 +50,40 @@ $poppins: "Poppins", sans-serif;
     font-family: $rubik;
     font-size: 20px;
 }
-.boton-filtro:hover{
+
+.boton-filtro:hover {
     transform: scale(1.03);
+}
+
+.contenedor-ficha {
+    border: 10px solid #2D2E6F;
+    border-radius: 5px;
+    padding: 30px;
+
+    .contenido-ficha {
+        background-color: rgba(159, 160, 248, 0.6);
+        border-radius: 5px;
+        text-align: start;
+        line-height: 50px;
+        height: 40vh;
+        width: 50vh;
+
+        .titulo-ficha {
+            font-size: 32px;
+            font-weight: 600;
+            font-family: $poppins;
+        }
+
+        .texto-ficha {
+            font-size: 16px;
+            font-family: $rubik;
+
+        }
+    }
+}
+
+.imagen-ficha {
+    border-radius: 5px;
+    height: 40vh;
+    width: 50vh;
 }
