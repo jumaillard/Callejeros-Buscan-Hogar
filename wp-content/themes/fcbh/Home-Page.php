@@ -68,15 +68,8 @@ get_header();
 	<p class="my-3 w-75">Síguenos en Instagram para estar al tanto de nuestros próximos eventos y oportunidades para unirte a nuestra causa. ¡Te esperamos en nuestra cuenta para mantenerte informado!</p>
 	<img class="my-3" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/callejeros-instagram-1.png" alt="logo fcbh">
 	<div class="row my-3 p-1">
-		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
-		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
-		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
-		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
-		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
-		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
-		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
-		<div class="col-6 col-sm-4 col-md-3 p-2"><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-14-at-14.19-2.png" alt=""></div>
-	</div>
+	<?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+</div>
 	<button class="btn btn_cargar_mas my-3">Cargar Más</button>
 </section>
 <section class="ripley_section my-5">
