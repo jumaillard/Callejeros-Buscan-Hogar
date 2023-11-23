@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <section class="row contenedor-ficha mb-5">
 	<div class="col-12 col-md-6">
-		<img src="<?php the_field('foto'); ?>" alt="<?php the_field('nombre'); ?>" class="imagen-ficha ms-md-5 m-auto">
+		<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php the_field('nombre'); ?>" class="imagen-ficha ms-md-5 m-auto">
 	</div>
 	<div class="col-12 col-md-6 contenido-ficha">
 		<p class="titulo-ficha"><?php the_field('nombre'); ?></p>
