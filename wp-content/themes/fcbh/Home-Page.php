@@ -16,29 +16,35 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', 'home-page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-<section class="container">
-	<article class="slide-1">
-
+	
+		
+<section class="sliders_group container_slider position-relative my-5">
+	<article>
+		<div class="sliders_child_container slide-1">
+			<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-1.png" alt="">
+		    <div class="container_text_slider">
+				<h2>adoptanos</h2>
+				<p> Adopta un peludito y dale un hogar lleno de amor y cuidado, donde pueda disfrutar de una vida llena de felicidad y compañía</p>
+		    </div>
+		</div>
 	</article>
-	<article class="slide-2">
-
+	<article>
+		<div class="sliders_child_container slide-2">
+			<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-2.png" alt="">
+		    <div class="container_text_slider">
+				<h2>contactanos</h2>
+			    <p>Si tienes alguna duda, deseas ser voluntario o necesitas más información no dudes en contactarnos</p>
+		    </div>
+		</div>
 	</article>
-	<article class="slide-3">
-
+	<article>
+		<div class="sliders_child_container slide-3">
+			<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/Black-Dog-PNG-High-Quality-Image-1.png" alt="">
+			<div class="container_text_slider">
+				<h2>haz tú donación</h2>
+			    <p>Haz la diferencia en las vidas de animales necesitados. Tu donación apoya nuestra causa. Únete a nosotros para marcar la diferencia. ¡Tu contribución cuenta!</p>
+		    </div>
+		</div>
 	</article>
 </section>
 <section class="container_grid my-5">
@@ -75,11 +81,23 @@ get_header();
 
 <section class="container d-flex flex-column justify-content-around align-items-center my-5 text-center">
 	<h3 class="my-3 fw-bold">Visítanos en Redes Sociales</h3>
-	<p class="my-3 w-75">Síguenos en Instagram para estar al tanto de nuestros próximos eventos y oportunidades para unirte a nuestra causa. ¡Te esperamos en nuestra cuenta para mantenerte informado!</p>
-	<img class="my-3" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/callejeros-instagram-1.png" alt="logo fcbh">
-	<div class="row my-3 p-1">
-	<?php echo do_shortcode('[instagram-feed feed=1]'); ?>
-</div>
+	<p class="my-3 w-75 d-none">Síguenos en Instagram para estar al tanto de nuestros próximos eventos y oportunidades para unirte a nuestra causa. ¡Te esperamos en nuestra cuenta para mantenerte informado!</p>
+	<img class="my-3 d-none" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/callejeros-instagram-1.png" alt="logo fcbh">
+	<div class="container">
+	<?php
+		while ( have_posts() ) :
+			the_post();
+
+			get_template_part( 'template-parts/content', 'home-page' );
+
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+
+		endwhile; // End of the loop.
+		?>
+	</div>
 	<button class="btn btn_cargar_mas my-3">Cargar Más</button>
 </section>
 <section class="ripley_section my-5">
