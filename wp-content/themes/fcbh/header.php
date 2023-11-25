@@ -35,16 +35,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
       <li class="nav-item">
-								<a class="nav-link" href="#">Sobre Nosotros</a>
+								<a class="nav-link" href="sobre-nosotros">Sobre Nosotros</a>
 								</li>
 								<li class="nav-item">
 								<a class="nav-link" href="adoptanos">Adóptanos</a>
 								</li>
 								<li class="nav-item">
-								<a class="nav-link" href="#">Próximos Eventos</a>
+								<a class="nav-link" href="proximos-eventos">Próximos Eventos</a>
 								</li>
 								<li class="nav-item">
-								<a class="nav-link" href="#">Contacto</a>
+								<a class="nav-link" href="contacto">Contacto</a>
 								</li>
 								<li class="nav-item">
 								<a class="nav-link" href="#">Iniciar Sesión</a>

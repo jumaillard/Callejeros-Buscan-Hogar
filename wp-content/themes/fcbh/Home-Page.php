@@ -30,7 +30,17 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
+<section class="container">
+	<article class="slide-1">
 
+	</article>
+	<article class="slide-2">
+
+	</article>
+	<article class="slide-3">
+
+	</article>
+</section>
 <section class="container_grid my-5">
   <a href="#" class="area_centro">
     <h3>HAZ UNA DONACIÓN</h3>
