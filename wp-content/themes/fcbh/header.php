@@ -25,7 +25,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'fcbh' ); ?></a>
 
-	<header id="masthead" class="container-fluid px-5">
+	<header id="masthead" class="container-fluid px-5 bg-white">
 			<nav class="navbar navbar-expand-lg bg-transparent">
   <div class="container-fluid">
   <h1 class="navbar-brand"><?php the_custom_logo(); ?></h1>

@@ -1,3 +1,6 @@
+body {
+    background-image: url('http://localhost/fundacion-cbh/wp-content/uploads/2023/11/a5abb381-acdb-40d7-83c9-c4430886bf16.webp');
+}
 .container_grid {  
     display: grid;
     grid-template-columns: 0fr 0fr 0fr;
@@ -205,7 +208,7 @@
 
 
 /* Media query para dos columnas en pantallas de hasta 760px */
-@media (min-width: 481px) and (max-width: 760px) {
+@media (min-width: 481px) and (max-width: 940px) {
     .container_grid {
         display: flex;
         justify-content: center;
@@ -293,7 +296,7 @@
 }
 
 /* Media query para dispositivos moviles */
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 361px) and (max-width: 480px) {
     .container_grid {
         display: flex;
         justify-content: center;
@@ -361,6 +364,119 @@
       }
     .area_derecha_inferior {
         width: 45%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .area_derecha_inferior h3 {
+        font-size: 18px;
+    }
+    .area_derecha_inferior p {
+        font-size: 12px;
+    }
+    .area_derecha_inferior img.img_enlaces{
+        width: auto;
+        height: 120px
+    }
+    .area_izquierda_inferior {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .area_izquierda_inferior h3 {
+        font-size: 18px;
+    }
+    .area_izquierda_inferior p {
+        font-size: 12px;
+    }
+    .area_izquierda_inferior img.img_enlaces{
+        width: auto;
+        height: 120px
+    }
+    .area_izquierda_inferior div{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+      }
+}
+
+/* Media query para dispositivos moviles */
+@media (min-width: 0px) and (max-width: 360px) {
+    .container_grid {
+        display: flex;
+        justify-content: center;
+    }
+    .area_centro {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .area_centro img.img_enlaces{
+        width: auto;
+        height: 120px
+    }
+    .area_centro h3 {
+        font-size: 18px;
+    }
+    .area_centro p {
+        font-size: 12px;
+    }
+    .area_izquierda {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .area_izquierda h3 {
+        font-size: 18px;
+    }
+    .area_izquierda p {
+        font-size: 12px;
+    }
+    .area_izquierda img.img_enlaces{
+        width: auto;
+        height: 120px
+    }
+    .area_derecha {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .area_derecha h3 {
+        font-size: 18px;
+    }
+    .area_derecha p {
+        font-size: 12px;
+    }
+    .area_derecha img.img_enlaces{
+        width: auto;
+        height: 120px
+    }
+    .area_derecha div{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+      }
+    .area_derecha_inferior {
+        width: 90%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -540,7 +656,6 @@ li.slick-active button{
         color: transparent;
     }
     .sliders_child_container{
-        background-color: #C9C1E6;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -580,4 +695,62 @@ li.slick-active button{
         height: 250px;
     }
     
+}
+
+.seccion_rrss{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.card_rrss_facebook{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #f1d1ff82;
+border: solid 10px #F1D1FF;
+border-radius: 8px;
+text-align: center;
+padding: 2% 1% 1% 2%;
+max-width: 40%;
+margin: 1%;
+color: #2D2E6F;
+text-decoration: none;
+transition: color 0.3s, box-shadow 0.3s;
+}
+.card_rrss_facebook:hover{
+    color: #5d5fdb !important;
+    box-shadow: 0 0 4px 4px  #C9C1E6;
+}
+.card_rrss_tiktok{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe5b878;
+    border: solid 10px #FFE5B8;
+    border-radius: 8px;
+    text-align: center;
+    padding: 2% 1% 1% 2%;    
+    max-width: 40%;
+    margin: 1%;
+    color: #2D2E6F;
+    text-decoration: none;
+    transition: color 0.3s, box-shadow 0.3s;
+}
+.card_rrss_tiktok:hover{
+    color: #5d5fdb !important;
+    box-shadow: 0 0 4px 4px  #C9C1E6;
+}
+.svg_rrss{
+    fill: #2D2E6F;
+    width: 80px;
+    height: 80px;
+}
+
+.container_svg_rrss{
+    background-color: #ffff;
+    border-radius: 50%;
+    margin: 2%;
+    padding: 2%;
 }
