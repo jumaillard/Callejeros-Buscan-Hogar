@@ -18,7 +18,7 @@ get_header();
 	<main id="primary" class="site-main">
 	
 		
-<section class="sliders_group container_slider position-relative my-5">
+<section class="sliders_group container_slider position-relative mb-5">
 	<article>
 		<div class="sliders_child_container slide-1">
 			<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-1.png" alt="">
@@ -81,8 +81,8 @@ get_header();
 
 <section class="container d-flex flex-column justify-content-around align-items-center my-5 text-center">
 	<h3 class="my-3 fw-bold">Visítanos en Redes Sociales</h3>
-	<p class="my-3 w-75 d-none">Síguenos en Instagram para estar al tanto de nuestros próximos eventos y oportunidades para unirte a nuestra causa. ¡Te esperamos en nuestra cuenta para mantenerte informado!</p>
-	<img class="my-3 d-none" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/callejeros-instagram-1.png" alt="logo fcbh">
+	<p class="my-3 w-75">Síguenos en Instagram para estar al tanto de nuestros próximos eventos y oportunidades para unirte a nuestra causa. ¡Te esperamos en nuestra cuenta para mantenerte informado!</p>
+	<img class="my-3" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/callejeros-instagram-1.png" alt="logo fcbh">
 	<div class="container">
 	<?php
 		while ( have_posts() ) :
@@ -98,7 +98,24 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 	</div>
-	<button class="btn btn_cargar_mas my-3">Cargar Más</button>
+</section>
+<section class="seccion_rrss container-fluid my-5">
+    <a href="#" class="card_rrss_facebook">
+		<div class="container_svg_rrss">
+		<svg class="svg_rrss" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+		</div>
+	    
+		<h5>FACEBOOK</h5>
+		<p>Visítanos en Facebook y mantente al tanto de nuestras últimas noticias y eventos. ¡Síguenos para estar conectado con nuestra comunidad amante de los animales!</p>
+	</a>
+	<a href="#" class="card_rrss_tiktok">
+		<div class="container_svg_rrss">
+		<svg class="svg_rrss" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+		</div>
+	    
+		<h5>TIKTOK</h5>
+		<p>¡Síguenos en TikTok para disfrutar de videos entretenidos y llenos de amor con nuestras adorables mascotas! Únete a la diversión y comparte el cariño por los animales con nosotros.</p>
+	</a>
 </section>
 <section class="ripley_section my-5">
 <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
