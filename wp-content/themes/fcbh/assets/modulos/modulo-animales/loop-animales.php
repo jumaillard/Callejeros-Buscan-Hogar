@@ -48,7 +48,6 @@ incrustar_hoja_estilos_comision();
                 <span><small><strong>Edad: </strong> <?php the_field('edad'); ?></small></span></h2>
 				<p class="texto-card-adoptanos">"<?php the_field('descripcion'); ?>"</p>
 				<p class="texto-card-adoptanos">Contacta para más información: <strong> <?php the_field('encargado'); ?> <?php the_field('telefono'); ?></strong></p>
-				<p class="texto-card-adoptanos"></p>
 			</div>
 		</div></a>
         </div>

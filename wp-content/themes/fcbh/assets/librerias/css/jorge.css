@@ -64,4 +64,16 @@
   height: 40vh;
   width: 50vh; }
 
+#enviar {
+  border-radius: 18px;
+  border-color: #2D2E6F;
+  background-color: #2D2E6F;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  padding: 15px;
+  transition: .3s; }
+
+#enviar:hover {
+  box-shadow: 0 0 10px 1px #17184e; }
+
 /*# sourceMappingURL=jorge.css.map */

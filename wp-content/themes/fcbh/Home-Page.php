@@ -57,7 +57,7 @@ get_header();
 	<h3>PRÓXIMOS EVENTOS</h3>
     <p>Descubre nuestros próximos eventos: jornadas de adopción, charlas y esterilizaciones masivas.</p>
 	<img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/Black-Dog-PNG-High-Quality-Image-1.png" alt=""></a>
-  <a href="#" class="area_derecha">
+  <a href="adoptanos" class="area_derecha">
 	<h3>ADOPTA UN PELUDITO</h3>
 	<div>
 	<img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/kisspng-dog-pet-puppy-cat-dog-5a7525d302cf50.png" alt="">

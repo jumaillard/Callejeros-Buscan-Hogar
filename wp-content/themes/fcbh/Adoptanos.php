@@ -16,20 +16,6 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-
-	<?php
-	while (have_posts()):
-		the_post();
-
-		get_template_part('template-parts/content', 'adoptanos');
-
-		// If comments are open or we have at least one comment, load up the comment template.
-		if (comments_open() || get_comments_number()):
-			comments_template();
-		endif;
-
-	endwhile; // End of the loop.
-	?>
 	<section class="banner-adoptanos p-5">
 		<div class="container">
 			<div class="row">
@@ -72,9 +58,18 @@ get_header();
 	</section>
 	<div class="container">
 		<div class="row">
-		<?php include get_template_directory(). '/assets/modulos/modulo-animales/loop-animales.php'; ?>
+			<?php include get_template_directory() . '/assets/modulos/modulo-animales/loop-animales.php'; ?>
 		</div>
+	</div>
+	<section class="container">
+		<h3 class="text-center">Antes y después</h3>
+		<p class="text-center">De la tristeza a la felicidad: echa un vistazo a cómo nuestras mascotas han transformado sus vidas desde que
+			fueron rescatadas y adoptadas. Sus historias son un testimonio conmovedor de la importancia de darles una
+			segunda oportunidad y el poder del amor y cuidado en su recuperación.</p>
+		<div class="row slider">
+
 		</div>
+	</section>
 </main><!-- #main -->
 
 <?php

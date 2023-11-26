@@ -25,7 +25,7 @@ function animales_register() {
         'rewrite' => true,
 		'exclude_from_search'   => false,
         'capability_type' => 'post',
-        'menu_icon'  => 'dashicons-controls-play',
+        'menu_icon'  => 'dashicons-pets',
         'hierarchical' => false,
         'menu_position' => null,
         'supports'=> array( 'title','thumbnail', 'excerpt', 'editor'),
