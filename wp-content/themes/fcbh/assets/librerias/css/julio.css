@@ -717,6 +717,7 @@ margin: 1%;
 color: #2D2E6F;
 text-decoration: none;
 transition: color 0.3s, box-shadow 0.3s;
+height: 320px;
 }
 .card_rrss_facebook:hover{
     color: #5d5fdb !important;
@@ -737,6 +738,7 @@ transition: color 0.3s, box-shadow 0.3s;
     color: #2D2E6F;
     text-decoration: none;
     transition: color 0.3s, box-shadow 0.3s;
+    height: 320px;
 }
 .card_rrss_tiktok:hover{
     color: #5d5fdb !important;

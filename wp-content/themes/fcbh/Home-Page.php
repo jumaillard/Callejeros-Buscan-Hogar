@@ -114,7 +114,7 @@ get_header();
 		</div>
 	    
 		<h5>TIKTOK</h5>
-		<p>¡Síguenos en TikTok para disfrutar de videos entretenidos y llenos de amor con nuestras adorables mascotas! Únete a la diversión y comparte el cariño por los animales con nosotros.</p>
+		<p>¡Síguenos en TikTok para disfrutar de videos entretenidos y llenos de amor con nuestras adorables mascotas! Únete a la diversión y comparte el cariño por los animales.</p>
 	</a>
 </section>
 <section class="ripley_section my-5">
