@@ -1,4 +1,4 @@
-[2023-11-27T01:53:59+00:00] The Instagram API responded with an error: Error #0 [Unknown]: Client error: `GET https://graph.instagram.com/me?fields=id,username,media_count,account_type&access_token=IGQWRNdG9Hdk13Y3JOeUoyOVZAYZAXJ6UmhSN3J5emNZAM1pVRE5vNmJxWkVNSUptWVpRWEdZAcmxfcmVlQjVna2NZAckQ5N2tYbzA2b0s2ZAnVrMU9MY1NDYUtEREo2ZAXZAMc0VIN0pfaEU5SmZAzUQZDZD` resulted in a `400 Bad Request` response
+[2023-11-27T03:22:04+00:00] The Instagram API responded with an error: Error #190 [OAuthException]: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.
                             #0 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\IgApi\IgApiUtils.php(69): RebelCode\Spotlight\Instagram\IgApi\IgApiUtils::handleException(Object(RebelCode\WordPress\Http\Exception\ClientErrorException))
                             #1 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\IgApi\IgBasicApiClient.php(86): RebelCode\Spotlight\Instagram\IgApi\IgApiUtils::sendRequest(Object(RebelCode\WordPress\Http\WpClient), Object(RebelCode\Psr7\Request))
                             #2 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\IgApi\IgApiClient.php(79): RebelCode\Spotlight\Instagram\IgApi\IgBasicApiClient->getTokenUser(Object(RebelCode\Spotlight\Instagram\IgApi\AccessToken))
@@ -11,4 +11,32 @@
                             #9 C:\MAMP\htdocs\fundacion-cbh\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
                             #10 C:\MAMP\htdocs\fundacion-cbh\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
                             #11 C:\MAMP\htdocs\fundacion-cbh\wp-cron.php(191): do_action_ref_array('spotlight/insta...', Array)
+                            #12 {main}
+[2023-11-27T02:22:24+00:00] The Instagram API responded with an error: Error #190 [OAuthException]: Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.
+                            #0 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\IgApi\IgApiUtils.php(69): RebelCode\Spotlight\Instagram\IgApi\IgApiUtils::handleException(Object(RebelCode\WordPress\Http\Exception\ClientErrorException))
+                            #1 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\IgApi\IgBasicApiClient.php(86): RebelCode\Spotlight\Instagram\IgApi\IgApiUtils::sendRequest(Object(RebelCode\WordPress\Http\WpClient), Object(RebelCode\Psr7\Request))
+                            #2 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\IgApi\IgApiClient.php(79): RebelCode\Spotlight\Instagram\IgApi\IgBasicApiClient->getTokenUser(Object(RebelCode\Spotlight\Instagram\IgApi\AccessToken))
+                            #3 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\Actions\UpdateAccountsAction.php(57): RebelCode\Spotlight\Instagram\IgApi\IgApiClient->getAccountInfo(Object(RebelCode\Spotlight\Instagram\IgApi\IgAccount))
+                            #4 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\Utils\Arrays.php(120): RebelCode\Spotlight\Instagram\Actions\UpdateAccountsAction->RebelCode\Spotlight\Instagram\Actions\{closure}(Object(WP_Post), 0)
+                            #5 [internal function]: RebelCode\Spotlight\Instagram\Utils\Arrays::RebelCode\Spotlight\Instagram\Utils\{closure}(Object(WP_Post), 0)
+                            #6 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\Utils\Arrays.php(121): array_walk(Array, Object(Closure))
+                            #7 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\Actions\UpdateAccountsAction.php(68): RebelCode\Spotlight\Instagram\Utils\Arrays::each(Array, Object(Closure))
+                            #8 C:\MAMP\htdocs\fundacion-cbh\wp-includes\class-wp-hook.php(324): RebelCode\Spotlight\Instagram\Actions\UpdateAccountsAction->__invoke()
+                            #9 C:\MAMP\htdocs\fundacion-cbh\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+                            #10 C:\MAMP\htdocs\fundacion-cbh\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+                            #11 C:\MAMP\htdocs\fundacion-cbh\wp-cron.php(191): do_action_ref_array('spotlight/insta...', Array)
+                            #12 {main}
+[2023-11-27T01:53:59+00:00] The Instagram API responded with an error: Error #0 [Unknown]: Client error: `GET https://graph.instagram.com/me?fields=id,username,media_count,account_type&access_token=IGQWRNdG9Hdk13Y3JOeUoyOVZAYZAXJ6UmhSN3J5emNZAM1pVRE5vNmJxWkVNSUptWVpRWEdZAcmxfcmVlQjVna2NZAckQ5N2tYbzA2b0s2ZAnVrMU9MY1NDYUtEREo2ZAXZAMc0VIN0pfaEU5SmZAzUQZDZD` resulted in a `400 Bad Request` response
+                            #0 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\IgApi\IgApiUtils.php(69): RebelCode\Spotlight\Instagram\IgApi\IgApiUtils::handleException(Object(RebelCode\WordPress\Http\Exception\ClientErrorException))
+                            #1 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\IgApi\IgBasicApiClient.php(86): RebelCode\Spotlight\Instagram\IgApi\IgApiUtils::sendRequest(Object(RebelCode\WordPress\Http\WpClient), Object(RebelCode\Psr7\Request))
+                            #2 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\IgApi\IgApiClient.php(79): RebelCode\Spotlight\Instagram\IgApi\IgBasicApiClient->getTokenUser(Object(RebelCode\Spotlight\Instagram\IgApi\AccessToken))
+                            #3 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\Actions\UpdateAccountsAction.php(57): RebelCode\Spotlight\Instagram\IgApi\IgApiClient->getAccountInfo(Object(RebelCode\Spotlight\Instagram\IgApi\IgAccount))
+                            #4 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\Utils\Arrays.php(120): RebelCode\Spotlight\Instagram\Actions\UpdateAccountsAction->RebelCode\Spotlight\Instagram\Actions\{closure}(Object(WP_Post), 0)
+                            #5 [internal function]: RebelCode\Spotlight\Instagram\Utils\Arrays::RebelCode\Spotlight\Instagram\Utils\{closure}(Object(WP_Post), 0)
+                            #6 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\Utils\Arrays.php(121): array_walk(Array, Object(Closure))
+                            #7 C:\MAMP\htdocs\fundacion-cbh\wp-content\plugins\spotlight-social-photo-feeds\src\core\Actions\UpdateAccountsAction.php(68): RebelCode\Spotlight\Instagram\Utils\Arrays::each(Array, Object(Closure))
+                            #8 C:\MAMP\htdocs\fundacion-cbh\wp-includes\class-wp-hook.php(324): RebelCode\Spotlight\Instagram\Actions\UpdateAccountsAction->__invoke()
+                            #9 C:\MAMP\htdocs\fundacion-cbh\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+                            #10 C:\MAMP\htdocs\fundacion-cbh\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+                            #11 C:\MAMP\htdocs\fundacion-cbh\wp-cron.php(191): do_action_ref_array('spotlight/insta...', Array)
                             #12 {main}

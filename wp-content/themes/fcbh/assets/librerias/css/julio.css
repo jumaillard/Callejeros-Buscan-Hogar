@@ -275,7 +275,7 @@ body {
     }
 
     .area_izquierda_inferior {
-        width: 90%;
+        width: 92%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -687,7 +687,6 @@ li.slick-active button{
     }
 
     .sliders_child_container{
-        background-color: #C9C1E6;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -701,6 +700,7 @@ li.slick-active button{
  display: flex;
  justify-content: center;
  align-items: center;
+ flex-wrap: wrap;
 }
 .card_rrss_facebook{
 display: flex;
@@ -712,7 +712,7 @@ border: solid 10px #F1D1FF;
 border-radius: 8px;
 text-align: center;
 padding: 2% 1% 1% 2%;
-max-width: 40%;
+width: 40%;
 margin: 1%;
 color: #2D2E6F;
 text-decoration: none;
@@ -733,7 +733,7 @@ height: 320px;
     border-radius: 8px;
     text-align: center;
     padding: 2% 1% 1% 2%;    
-    max-width: 40%;
+    width: 40%;
     margin: 1%;
     color: #2D2E6F;
     text-decoration: none;
@@ -755,4 +755,69 @@ height: 320px;
     border-radius: 50%;
     margin: 2%;
     padding: 2%;
+}
+
+
+@media (min-width: 0px) and (max-width: 800px) {
+    .card_rrss_facebook{
+        width: 80%;
+        height: auto;
+    }
+    .card_rrss_tiktok{
+        width: 80%;
+        height: auto;
+    }
+}
+
+
+.seccion_eventos{
+    background-color: rgba(201, 193, 230, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.seccion_eventos h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.seccion_eventos p{
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+}
+.eventos_card{
+    display: flex;
+    justify-content: center;
+}
+.container_info_fecha{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9FA0F8;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.text_info_fecha{
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: solid 1px #2D2E6F;
+    text-align: start;
+}
+
+.container_info_eventos{
+    border: solid 1px #2D2E6F;
+    padding: 2%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 60%;
+    margin: 3px;
 }
