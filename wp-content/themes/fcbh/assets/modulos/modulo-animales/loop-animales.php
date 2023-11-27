@@ -20,7 +20,7 @@ incrustar_hoja_estilos_comision();
         //si voy a paginar mi contenido
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         //cantidad de post por página
-        $post_per_page = -1; // -1 shows all posts
+        $post_per_page = 3; // -1 shows all posts
         //array del custom_post_type
         $args = array(
             //tipo de post_type que publicaremos
@@ -42,10 +42,10 @@ incrustar_hoja_estilos_comision();
 
         <div class="col-12 col-md-4 mb-5">
 		<a href="<?php the_permalink(); ?>" class="boton-card-adoptanos"><div class="card card-adoptanos" style="width: 18rem;">
-			<img class="card-img-top" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php the_field('nombre'); ?>">
+			<img class="card-img-top" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php the_title(); ?>">
 			<div class="card-body body-card-adoptanos">
-				<h2 class="card-titulo-adoptanos"><?php the_field('nombre'); ?><br>
-                <span><small><strong>Edad: </strong> <?php the_field('edad'); ?></small></span></h2>
+				<h2 class="card-titulo-adoptanos"><?php the_title() ?><br>
+                <span><strong>Edad: </strong> <?php the_field('edad'); ?></span></h2>
 				<p class="texto-card-adoptanos">"<?php the_field('descripcion'); ?>"</p>
 				<p class="texto-card-adoptanos">Contacta para más información: <strong> <?php the_field('encargado'); ?> <?php the_field('telefono'); ?></strong></p>
 			</div>
