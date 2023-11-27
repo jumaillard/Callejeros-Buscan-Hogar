@@ -66,8 +66,10 @@ get_header();
 		<p class="text-center">De la tristeza a la felicidad: echa un vistazo a cómo nuestras mascotas han transformado sus vidas desde que
 			fueron rescatadas y adoptadas. Sus historias son un testimonio conmovedor de la importancia de darles una
 			segunda oportunidad y el poder del amor y cuidado en su recuperación.</p>
-		<div class="row slider">
-
+		<div class="row slider-adoptanos">
+			<div><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd3.jpg" alt="..."></div>
+			<div><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd1.jpg" alt="..."></div>
+			<div><img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd2.jpg" alt="..."></div>
 		</div>
 	</section>
 </main><!-- #main -->
