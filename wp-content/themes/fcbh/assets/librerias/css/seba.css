@@ -49,10 +49,31 @@ footer .logo-footer img {
   border: 1px solid #2D2E6F;
 }
 
+.modal label {
+  display: block;
+}
+.modal a {
+  color: #2D2E6F;
+  text-decoration: none;
+}
+.modal a:hover {
+  color: #000;
+}
+.modal input {
+  border: 1px solid #2D2E6F;
+  color: #2D2E6F;
+  width: 100%;
+}
+.modal button {
+  color: #ffffff;
+  background-color: #2D2E6F;
+  border-radius: 30px;
+}
+
 @media (min-width: 0px) and (max-width: 760px) {
   header .custom-logo-link {
     display: inline-block;
-    width: 150px;
+    width: 200px;
     height: auto;
   }
 }/*# sourceMappingURL=seba.css.map */

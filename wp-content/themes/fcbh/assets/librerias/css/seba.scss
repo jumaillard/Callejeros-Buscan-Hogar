@@ -64,6 +64,29 @@ footer{
 
 }
 
+.modal{
+    label{
+        display: block;
+    }
+    a{
+        color: $texto; 
+        text-decoration: none;  
+    }
+    a:hover{
+        color: #000;   
+    }
+    input{
+        border: 1px solid $texto;
+        color: $texto;
+        width: 100%;
+    }
+    button{
+        color: #ffffff;
+        background-color: $texto;
+        border-radius: 30px;
+    }
+}
+
 @media (min-width: 0px) and (max-width: 760px) {
     header .custom-logo-link {
       display: inline-block;
