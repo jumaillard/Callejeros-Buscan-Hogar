@@ -50,7 +50,12 @@ footer{
             width: 200px;
         }
     }
-
+    i{
+        color: $texto;
+    }
+    i:hover{
+        color: #000 ;
+    }
 }
 
 .post, .page {

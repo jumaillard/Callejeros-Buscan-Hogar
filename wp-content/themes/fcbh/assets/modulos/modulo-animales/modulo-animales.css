@@ -3,11 +3,13 @@
   padding: 10px;
   transition: .3s;
   width: 20vh;
-  height: 45vh;
+  height: 55vh;
+
 }
+
 @media only screen and (max-width: 768px) {
   .card-adoptanos {
-    height: 50vh;
+    height: 70vh;
   }
 }
 .boton-card-adoptanos{

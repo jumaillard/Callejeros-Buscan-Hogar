@@ -32,7 +32,7 @@ get_header();
 		<div class="sliders_child_container slide-2">
 			<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-2.png" alt="">
 		    <div class="container_text_slider">
-				<h2>contactanos</h2>
+				<h2>contáctanos</h2>
 			    <p>Si tienes alguna duda, deseas ser voluntario o necesitas más información no dudes en contactarnos</p>
 		    </div>
 		</div>
