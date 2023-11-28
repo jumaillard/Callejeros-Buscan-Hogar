@@ -794,16 +794,18 @@ height: 320px;
     justify-content: center;
 }
 .container_info_fecha{
-    padding: 2%;
+    padding: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #9FA0F8;
     margin: 3px;
     border-radius: 5px;
+    min-width: 250px;
 }
 
 .text_info_fecha{
+    padding: 5%;
     font-size: 28px;
     font-weight: bold;
     border-bottom: solid 1px #2D2E6F;
