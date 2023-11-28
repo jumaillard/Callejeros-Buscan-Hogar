@@ -48,7 +48,7 @@
     background-color: rgba(159, 160, 248, 0.6);
     border-radius: 5px;
     text-align: start;
-    line-height: 50px;
+    line-height: 40px;
     height: 40vh;
     width: 50vh; }
     .contenedor-ficha .contenido-ficha .titulo-ficha {
@@ -59,6 +59,16 @@
       font-size: 16px;
       font-family: "Rubik", sans-serif; }
 
+@media only screen and (max-width: 768px) {
+  .contenedor-ficha {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 5%;
+    margin-left: 5px; }
+
+  .contenedor-ficha .contenido-ficha {
+    height: 50vh; } }
 .imagen-ficha {
   border-radius: 5px;
   height: 40vh;
@@ -75,5 +85,20 @@
 
 #enviar:hover {
   box-shadow: 0 0 10px 1px #17184e; }
+
+.form-label {
+  color: #2D2E6F;
+  font-family: "Rubik", sans-serif; }
+
+.slider-adoptanos .slick-list {
+  left: 3%; }
+
+.slick-arrow i {
+  color: #2D2E6F;
+  transition: 0.3s; }
+
+.slick-arrow i:hover {
+  transform: scale(1.5);
+  color: black; }
 
 /*# sourceMappingURL=jorge.css.map */

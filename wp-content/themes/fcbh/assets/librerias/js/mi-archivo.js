@@ -3,28 +3,27 @@ $(document).ready(function () {
     dots: true,
   });
 
-  $('.center').slick({
+  $('.slider-adoptanos').slick({
     dots: true,
-    centerMode: true,
-    centerPadding: '60px',
     slidesToShow: 3,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 768,
         settings: {
+          dots: true,
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 2
+          slidesToShow: 2,
+          slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 540,
+        breakpoint: 580,
         settings: {
+          dots: true,
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       }
     ]
