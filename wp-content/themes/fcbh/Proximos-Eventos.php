@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-<section class="seccion_eventos">
+<section class="seccion_eventos text-center">
 <h2><?php echo get_the_title();?></h2>
 <p><?php echo the_content();?></p>
 </section>

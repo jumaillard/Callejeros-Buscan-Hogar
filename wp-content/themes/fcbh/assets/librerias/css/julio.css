@@ -801,7 +801,8 @@ height: 320px;
     background-color: #9FA0F8;
     margin: 3px;
     border-radius: 5px;
-    min-width: 250px;
+    width: 20%;
+    max-width: 200px;
 }
 
 .text_info_fecha{
@@ -822,4 +823,89 @@ height: 320px;
     align-items: start;
     width: 60%;
     margin: 3px;
+}
+
+input.btn-enviar{
+    border-radius: 21px;
+    border-color: #2D2E6F;
+    background-color: #2D2E6F;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    padding: 15px;
+    max-width: 150px;
+    transition: color 0.3s, box-shadow 0.3s, background-color 0.3s;
+    text-transform: capitalize;
+}
+
+input.btn-enviar:hover{
+    color: #2D2E6F !important;
+    background-color:  #C9C1E6;
+    box-shadow: 0 0 4px 4px  #2D2E6F;
+}
+
+.input_contacto{
+    border: solid 1px #2D2E6F !important;
+    border-radius: 5px !important;
+    min-height: 35px !important;
+}
+
+@media (min-width: 0px) and (max-width: 900px) {
+    
+    .seccion_eventos h2{
+        font-weight: bold;
+        font-size: 35px;
+    }
+    
+    .eventos_card{
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        padding: 2%;
+    }
+    .container_info_fecha{
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #9FA0F8;
+        margin: 5px;
+        border-radius: 5px;
+        width: 30%;
+        text-transform: capitalize;
+    }
+    
+    .text_info_fecha{
+        font-size: 15px;
+        font-weight: bold;
+        border-bottom: solid 1px #2D2E6F;
+        text-align: start;
+    }
+    
+    .container_info_eventos{
+        border: solid 1px #2D2E6F;
+        padding: 3%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        margin: 3px;
+    }
+    .container_info_eventos h3{
+        font-size: 20px;
+    }
+    .container_info_eventos p{
+        font-size: 14px;
+    }
+}
+
+
+
+
+@media (min-width: 0px) and (max-width: 500px){
+.seccion_eventos h2 {
+    font-size: 30px;
+    text-align: center;
+}
 }

@@ -23,7 +23,7 @@ get_header();
 		<div class="sliders_child_container slide-1">
 			<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-1.png" alt="">
 		    <div class="container_text_slider">
-				<h2>adoptanos</h2>
+				<h2>adóptanos</h2>
 				<p> Adopta un peludito y dale un hogar lleno de amor y cuidado, donde pueda disfrutar de una vida llena de felicidad y compañía</p>
 		    </div>
 		</div>
@@ -32,7 +32,7 @@ get_header();
 		<div class="sliders_child_container slide-2">
 			<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-2.png" alt="">
 		    <div class="container_text_slider">
-				<h2>contactanos</h2>
+				<h2>contáctanos</h2>
 			    <p>Si tienes alguna duda, deseas ser voluntario o necesitas más información no dudes en contactarnos</p>
 		    </div>
 		</div>
@@ -69,7 +69,7 @@ get_header();
     <p>Únete a nuestra causa y hazte socio para ser parte activa en la protección de los animales necesitados. Juntos, podemos lograr un impacto duradero en sus vidas.</p>
 	<img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-1.png" alt=""></a>
   <a href="#" class="area_izquierda_inferior">
-	<h3>CONTACTÁNOS</h3>
+	<h3>CONTÁCTANOS</h3>
 	<div>
   <img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-2.png" alt="">
   <p>
@@ -114,7 +114,7 @@ get_header();
 		</div>
 	    
 		<h5>TIKTOK</h5>
-		<p>¡Síguenos en TikTok para disfrutar de videos entretenidos y llenos de amor con nuestras adorables mascotas! Únete a la diversión y comparte el cariño por los animales.</p>
+		<p>¡Síguenos en TikTok para disfrutar de videos entretenidos y llenos de amor con nuestras adorables mascotas! Únete a la diversión y comparte el cariño por los animales con nosotros.</p>
 	</a>
 </section>
 <section class="ripley_section my-5">

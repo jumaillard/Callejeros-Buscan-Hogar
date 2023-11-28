@@ -104,16 +104,40 @@ footer {
   border-radius: 3px; }
 
 @media (min-width: 0px) and (max-width: 992px) {
+<<<<<<< Updated upstream
   header .custom-logo-link {
     display: inline-block;
     width: 200px;
     height: auto; }
 
+=======
+>>>>>>> Stashed changes
   .none {
     display: none; }
 
   .box1, .box2 {
+<<<<<<< Updated upstream
     height: auto !important; } }
+=======
+    height: auto !important;
+  }
+}
+@media (min-width: 441px) and (max-width: 992px) {
+  header .custom-logo-link {
+    display: inline-block;
+    width: 190px;
+    height: auto;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 440px) {
+  header .custom-logo-link {
+    display: inline-block;
+    width: 150px;
+    height: auto;
+  }
+}
+>>>>>>> Stashed changes
 @media (min-width: 993px) and (max-width: 1371px) {
   .none2 {
     display: none; }
