@@ -13,45 +13,67 @@ incrustar_hoja_estilos_comision();
 <!-- #seccion 5 contenidos -->
 <section class="row m-5">
 
-    <?php
-        //le paso una variable para saber si está activado
-        $active = true;
-        $temp = $wp_query;
-        //si voy a paginar mi contenido
-        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-        //cantidad de post por página
-        $post_per_page = 3; // -1 shows all posts
-        //array del custom_post_type
-        $args = array(
-            //tipo de post_type que publicaremos
-            'post_type' => 'animales',
-            //los ordenará por fecha de publicación (usare date o rand)
-            'orderby' => 'date',
-            //ordenados me manera ASC, DESC o RAND
-            'order' => 'ASC',
-            //paginación
-            'paged' => $paged,
-            //cantidad de post por página
-            'posts_per_page' => $post_per_page
-        );
-        //se genera una busqueda del array
-        $wp_query = new WP_Query($args);
+<?php
+// Obtener la categoría seleccionada (si existe)
+$categoria_seleccionada = isset($_GET['categoria-animales']) ? $_GET['categoria-animales'] : '';
 
-        //si tengo un post : mientras que $wp_query tenga un post : imprimeme el post
-        if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); //todo lo que este dentro de este loop, es la estructura que se mostrará?>
+// Resto del código de la consulta
+$args = array(
+    $post_per_page = 3, // -1 shows all posts
+    'post_type' => 'animales',
+    'orderby' => 'date',
+    'order' => 'ASC',
+    'paged' => $paged,
+    'posts_per_page' => $post_per_page,
+);
+
+// Aplicar el filtro solo si hay una categoría seleccionada
+if ($categoria_seleccionada) {
+    $args['tax_query'] = array(
+        array(
+            'taxonomy' => 'categoria-animales',
+            'field'    => 'slug',
+            'terms'    => $categoria_seleccionada,
+        ),
+    );
+}
+
+$custom_query = new WP_Query($args);
+
+    //si tengo un post : mientras que $custom_query tenga un post : imprimeme el post
+    if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); //todo lo que este dentro de este loop, es la estructura que se mostrará?>
 
         <div class="col-12 col-md-4 mb-5">
-		<a href="<?php the_permalink(); ?>" class="boton-card-adoptanos"><div class="card card-adoptanos" style="width: 18rem;">
-			<img class="card-img-top" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php the_title(); ?>">
-			<div class="card-body body-card-adoptanos">
-				<h2 class="card-titulo-adoptanos"><?php the_title() ?><br>
-                <span><strong>Edad: </strong> <?php the_field('edad'); ?></span></h2>
-				<p class="texto-card-adoptanos">"<?php the_field('descripcion'); ?>"</p>
-				<p class="texto-card-adoptanos">Contacta para más información: <strong> <?php the_field('encargado'); ?> <?php the_field('telefono'); ?></strong></p>
-			</div>
-		</div></a>
+            <a href="<?php the_permalink(); ?>" class="boton-card-adoptanos">
+                <div class="card card-adoptanos" style="width: 18rem;">
+                    <img class="card-img-top" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php the_title(); ?>">
+                    <div class="card-body body-card-adoptanos">
+                        <h2 class="card-titulo-adoptanos"><?php the_title() ?><br>
+                            <span><strong>Edad: </strong> <?php the_field('edad'); ?></span>
+                        </h2>
+                        <p class="texto-card-adoptanos">"<?php the_field('descripcion'); ?>"</p>
+                        <p class="texto-card-adoptanos">Contacta para más información: <strong> <?php the_field('encargado'); ?> <?php the_field('telefono'); ?></strong></p>
+                    </div>
+                </div>
+            </a>
         </div>
-    <?php endwhile; endif; wp_reset_query()/*resetea la query para que empieze de 0*/; $wp_query = $temp //empieza de nuevo el loop?>
+    <?php endwhile; ?>
+        <div class="col-12">
+            <!-- Paginación -->
+            <?php
+            echo '<div class="pagination">';
+            echo paginate_links(array(
+                'total' => $custom_query->max_num_pages, // Número total de páginas
+                'current' => max(1, get_query_var('paged')),
+                'prev_text' => __('<i class="fa-solid fa-arrow-left"></i>'),
+                'next_text' => __('<i class="fa-solid fa-arrow-right"></i>'),
+            ));
+            echo '</div>';
+            ?>
+        </div>
+    <?php endif;
+    wp_reset_postdata(); // resetea la consulta personalizada
+    $custom_query = $temp; // restablece la consulta original
+    ?>
 
 </section>
-<!------seccion contacto---->

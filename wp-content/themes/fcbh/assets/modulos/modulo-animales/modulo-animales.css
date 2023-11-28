@@ -3,7 +3,7 @@
   padding: 10px;
   transition: .3s;
   width: 20vh;
-  height: 45vh;
+  height: 50vh;
 }
 .boton-card-adoptanos{
   text-decoration: none;
@@ -20,4 +20,24 @@
 }
 .texto-card-adoptanos{
   font-size: 16px;
+}
+.pagination{
+  display: flex;
+  justify-content: end;
+}
+.page-numbers{
+  padding: 0 20px;
+  color: #2D2E6F !important;
+  font-family: 'Rubik', sans-serif !important;
+  text-decoration: none !important;
+  font-size: 22px;
+}
+.next, .prev{
+  border: 2px #2D2E6F solid !important;
+  padding: 2px 10px;
+  border-radius: 5px;
+  transition: .3s;
+}
+.next:hover, .prev:hover{
+  transform: scale(1.03);
 }
