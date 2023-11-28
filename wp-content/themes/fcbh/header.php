@@ -73,10 +73,6 @@
 								<button class="mb-4 px-5" type="submit">Iniciar Sesión</button>
 							</div>
 
-							<div class="d-flex justify-content-end">
-							<a href="#">¿Aún no tienes cuenta? <span class="fw-bold ps-3">Registrate</span></a>
-							</div>
-						</form>
 					</div>
 				</div>
 			</div>

@@ -1,7 +1,7 @@
 $tipografia-titulos: 'Poppins', sans-serif;
 $tipografia-parrafos: 'Rubik', sans-serif;
 $bg-primario: #ffffff;
-$bg-secundario: rgba(201, 193, 230, 0.6);
+$bg-secundario: rgba(201, 193, 230, 0.5);
 $texto: #2D2E6F;
 
 
@@ -87,10 +87,103 @@ footer{
     }
 }
 
-@media (min-width: 0px) and (max-width: 760px) {
+.banner-sobre-nosotros{
+    background-color: $bg-secundario;
+    h2{
+        font-size: 40px;
+    }
+}
+
+
+.box-somos{
+    .perro1{
+        position: relative;
+        img{
+            position: absolute;
+            bottom: 0;
+            right: 2%;
+            height: 100%;
+        }
+    }
+    .mision{
+        background-color: #f1d1ff59;
+        border: solid 10px #F1D1FF;
+        border-radius: 3px;
+    }
+    .vision{
+        background-color: #d1e7ff67;
+        border: solid 10px #D1E7FF;
+        border-radius: 3px;
+    }
+    .gato{
+        img{
+            height: 100%;
+        }
+    }
+    .perro2{
+        img{
+            height: 100%;
+        }
+    }
+}
+
+.actividades{
+    background-color: $bg-secundario;
+}
+
+.caja-final{
+    .perro{
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .box1{
+        background-color: #9fa1f863;
+        border: solid 10px #9FA0F8;
+        border-radius: 3px;
+        height: 45%;
+    }
+    .box2{
+        background-color: #ffe5b854;
+        border: solid 10px #FFE5B8;
+        border-radius: 3px;
+        height: 45%;
+    }
+    .box3{
+        background-color: #d1e7ff67;
+        border: solid 10px #D1E7FF;
+        border-radius: 3px;
+    }
+    .box4{
+        background-color: #f1d1ff59;
+        border: solid 10px #F1D1FF;
+        border-radius: 3px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 992px) {
     header .custom-logo-link {
       display: inline-block;
       width: 200px;
       height: auto;
     }
-  }
+    .none{
+        display: none;
+    }
+    .box1, .box2{
+        height: auto !important;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1371px) {
+ 
+    .none2{
+        display: none;
+    }
+
+    .custom-lg-size{
+        flex: 0 0 100%;
+    }
+    
+}
