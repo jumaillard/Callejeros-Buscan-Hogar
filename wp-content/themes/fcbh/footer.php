@@ -17,9 +17,9 @@
 				<span class="logo-footer"><?php the_custom_logo(); ?></span>
 			</div>
 			<div class="col-12">
-				<i class="bi bi-facebook fs-1"></i>
-				<i class="bi bi-instagram fs-1 px-5"></i>
-				<i class="bi bi-tiktok fs-1"></i>
+				<a href="https://web.facebook.com/CallejerosBuscanHogar/?locale=es_LA&_rdc=1&_rdr" target="_blank"><i class="bi bi-facebook fs-1"></i></a>
+				<a href="https://www.instagram.com/fundacioncbh/" target="_blank"><i class="bi bi-instagram fs-1 px-5"></i></a>
+				<a href="https://www.tiktok.com/@fundacioncbh" target="_blank"><i class="bi bi-tiktok fs-1"></i></a>
 			</div>
 			<div class="col-12">
 				<p class="fw-semibold">contacto@fundacioncbh.cl</p>

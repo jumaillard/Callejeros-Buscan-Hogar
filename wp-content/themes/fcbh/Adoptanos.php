@@ -114,8 +114,6 @@ wp_reset_postdata();
 			</div>
 		</div>
 	</section>
-
-
 	<div class="container">
 		<div class="row">
 			<?php include get_template_directory() . '/assets/modulos/modulo-animales/loop-animales.php'; ?>
@@ -130,17 +128,17 @@ wp_reset_postdata();
 				una
 				segunda oportunidad y el poder del amor y cuidado en su recuperación.</p>
 		</div>
-		<div class="slider-adoptanos center">
+		<div class="slider-adoptanos center container my-5">
 			<div class="slider-adoptanos-child"><img
-					src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd3.jpg" alt="..."></div>
+					src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd3.jpg" alt="..." class=" w-75"></div>
 			<div class="slider-adoptanos-child"><img
-					src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd1.jpg" alt="..."></div>
+					src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd1.jpg" alt="..." class=" w-75"></div>
 			<div class="slider-adoptanos-child"><img
-					src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd2.jpg" alt="..."></div>
+					src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd2.jpg" alt="..." class=" w-75"></div>
 			<div class="slider-adoptanos-child"><img
-					src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd4.jpg" alt="..."></div>
+					src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd4.jpg" alt="..." class=" w-75"></div>
 			<div class="slider-adoptanos-child"><img
-					src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd5.jpg" alt="..."></div>
+					src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/ayd5.jpg" alt="..." class=" w-75"></div>
 		</div>
 	</section>
 </main><!-- #main -->

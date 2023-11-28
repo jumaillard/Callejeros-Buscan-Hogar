@@ -19,7 +19,7 @@ $categoria_seleccionada = isset($_GET['categoria-animales']) ? $_GET['categoria-
 
 // Resto del código de la consulta
 $args = array(
-    $post_per_page = 3, // -1 shows all posts
+    $post_per_page = 6, // -1 shows all posts
     'post_type' => 'animales',
     'orderby' => 'date',
     'order' => 'ASC',
