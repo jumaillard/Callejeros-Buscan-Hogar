@@ -58,7 +58,7 @@ $custom_query = new WP_Query($args);
             </a>
         </div>
     <?php endwhile; ?>
-        <div class="col-12">
+        <div class="col-12 col-md-6 w-50 ">
             <!-- Paginación -->
             <?php
             echo '<div class="pagination">';

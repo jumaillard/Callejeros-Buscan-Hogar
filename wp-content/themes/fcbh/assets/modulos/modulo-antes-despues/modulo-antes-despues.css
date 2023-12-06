@@ -1,0 +1,13 @@
+.slider-adoptanos .slick-list {
+    left: 3%;
+  }
+  
+  .slick-arrow i {
+    color: #2D2E6F;
+    transition: 0.3s;
+  }
+  
+  .slick-arrow i:hover {
+    transform: scale(1.5);
+    color: black;
+  }
