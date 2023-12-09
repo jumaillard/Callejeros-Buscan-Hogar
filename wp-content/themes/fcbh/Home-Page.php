@@ -19,41 +19,49 @@ get_header();
 	
 		
 <section class="sliders_group container_slider position-relative mb-5">
+	<a href="adoptanos">
+		<article>
+		
+				<div class="sliders_child_container slide-1">
+					<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-1.png" alt="">
+					<div class="container_text_slider">
+						<h2>adóptanos</h2>
+						<p> Adopta un peludito y dale un hogar lleno de amor y cuidado, donde pueda disfrutar de una vida llena de felicidad y compañía</p>
+					</div>
+				</div>
+		
+		</article>
+	</a>
 	<article>
-		<div class="sliders_child_container slide-1">
-			<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-1.png" alt="">
-		    <div class="container_text_slider">
-				<h2>adóptanos</h2>
-				<p> Adopta un peludito y dale un hogar lleno de amor y cuidado, donde pueda disfrutar de una vida llena de felicidad y compañía</p>
-		    </div>
-		</div>
+		<a href="contacto">
+			<div class="sliders_child_container slide-2">
+				<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-2.png" alt="">
+				<div class="container_text_slider">
+					<h2>contáctanos</h2>
+					<p>Si tienes alguna duda, deseas ser voluntario o necesitas más información no dudes en contactarnos</p>
+				</div>
+			</div>
+		</a>
 	</article>
 	<article>
-		<div class="sliders_child_container slide-2">
-			<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-2.png" alt="">
-		    <div class="container_text_slider">
-				<h2>contáctanos</h2>
-			    <p>Si tienes alguna duda, deseas ser voluntario o necesitas más información no dudes en contactarnos</p>
-		    </div>
-		</div>
-	</article>
-	<article>
-		<div class="sliders_child_container slide-3">
-			<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/Black-Dog-PNG-High-Quality-Image-1.png" alt="">
-			<div class="container_text_slider">
-				<h2>haz tú donación</h2>
-			    <p>Haz la diferencia en las vidas de animales necesitados. Tu donación apoya nuestra causa. Únete a nosotros para marcar la diferencia. ¡Tu contribución cuenta!</p>
-		    </div>
-		</div>
+		<a href="https://esponsor.com/callejerosbuscanhogar?fbclid=IwAR2eN9qOX95zuOZ7PVTKR9f9L86VySsm6CQv0Zheb_sp8e5TLPVuDzhE7G0" target="_blank">
+			<div class="sliders_child_container slide-3">
+				<img class="imagen_slider" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/Black-Dog-PNG-High-Quality-Image-1.png" alt="">
+				<div class="container_text_slider">
+					<h2>haz tú donación</h2>
+					<p>Haz la diferencia en las vidas de animales necesitados. Tu donación apoya nuestra causa. Únete a nosotros para marcar la diferencia. ¡Tu contribución cuenta!</p>
+				</div>
+			</div>
+		</a>
 	</article>
 </section>
 <section class="container_grid my-5">
-  <a href="#" class="area_centro">
+  <a href="https://esponsor.com/callejerosbuscanhogar?fbclid=IwAR2eN9qOX95zuOZ7PVTKR9f9L86VySsm6CQv0Zheb_sp8e5TLPVuDzhE7G0" target="_blank" class="area_centro">
     <h3>HAZ UNA DONACIÓN</h3>
     <p>Donar para marcar la diferencia en las vidas de animales necesitados y apoyar nuestra causa.</p>
 	<img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-3.png" alt=""></a>
   
-  <a href="#" class="area_izquierda">
+  <a href="proximos-eventos" class="area_izquierda">
 	<h3>PRÓXIMOS EVENTOS</h3>
     <p>Descubre nuestros próximos eventos: jornadas de adopción, charlas y esterilizaciones masivas.</p>
 	<img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/Black-Dog-PNG-High-Quality-Image-1.png" alt=""></a>
@@ -64,11 +72,11 @@ get_header();
 	<p> Adopta un peludito y dale un hogar lleno de amor y cuidado, donde pueda disfrutar de una vida llena de felicidad y compañía</p>
 	</div>
       </a>
-  <a href="#" class="area_derecha_inferior">
+  <a href="https://esponsor.com/callejerosbuscanhogar?fbclid=IwAR2eN9qOX95zuOZ7PVTKR9f9L86VySsm6CQv0Zheb_sp8e5TLPVuDzhE7G0" target="_blank" class="area_derecha_inferior">
 	<h3>HAZTE SOCIO</h3>
     <p>Únete a nuestra causa y hazte socio para ser parte activa en la protección de los animales necesitados. Juntos, podemos lograr un impacto duradero en sus vidas.</p>
 	<img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-1.png" alt=""></a>
-  <a href="#" class="area_izquierda_inferior">
+  <a href="contacto" class="area_izquierda_inferior">
 	<h3>CONTÁCTANOS</h3>
 	<div>
   <img class="img_enlaces" src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-2.png" alt="">

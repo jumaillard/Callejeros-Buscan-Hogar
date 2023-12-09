@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -28,26 +28,23 @@
 	<header id="masthead" class="container-fluid px-lg-5 bg-white">
 			<nav class="navbar navbar-expand-lg bg-transparent">
   <div class="container-fluid">
-  <h1 class="navbar-brand"><?php the_custom_logo(); ?></h1>
+  <h1 class="navbar-brand zoom"><?php the_custom_logo(); ?></h1>
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fa-solid fa-dog"></i> / <i class="fa-solid fa-cat"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
       <li class="nav-item">
-								<a class="nav-link" href="sobre-nosotros">Sobre Nosotros</a>
+								<a class="nav-link zoom" href="sobre-nosotros">Sobre Nosotros</a>
 								</li>
 								<li class="nav-item">
-								<a class="nav-link" href="adoptanos">Adóptanos</a>
+								<a class="nav-link zoom" href="adoptanos">Adóptanos</a>
 								</li>
 								<li class="nav-item">
-								<a class="nav-link" href="proximos-eventos">Próximos Eventos</a>
+								<a class="nav-link zoom" href="proximos-eventos">Próximos Eventos</a>
 								</li>
 								<li class="nav-item">
-								<a class="nav-link" href="contacto">Contacto</a>
-								</li>
-								<li class="nav-item">
-								<a class="nav-link" data-bs-toggle="modal" data-bs-target="#inicio" href="#">Iniciar Sesión</a>
+								<a class="nav-link zoom" href="contacto">Contacto</a>
 								</li>
       </ul>
     </div>

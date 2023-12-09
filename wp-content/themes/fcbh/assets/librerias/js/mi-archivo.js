@@ -1,6 +1,5 @@
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
   $('.sliders_group').slick({
     dots: true,
   });
-
 });

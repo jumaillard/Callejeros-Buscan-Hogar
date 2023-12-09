@@ -6,6 +6,15 @@ body {
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Poppins", sans-serif;
 }
+body .zoom {
+  transition: transform 0.3s ease-in-out;
+}
+body .zoom:hover {
+  transform: scale(1.1);
+}
+body a {
+  transition: color 0.3s ease-in-out;
+}
 
 header .custom-logo-link {
   display: inline-block;
@@ -40,9 +49,17 @@ footer .logo-footer img {
 }
 footer i {
   color: #2D2E6F;
+  transition: color 0.3s ease-in-out;
 }
 footer i:hover {
-  color: #000;
+  color: #5d5fdb;
+}
+footer a {
+  text-decoration: none;
+  color: #2D2E6F;
+}
+footer a:hover {
+  color: #5d5fdb;
 }
 
 .post, .page {
@@ -53,6 +70,17 @@ footer i:hover {
   background-color: rgba(201, 193, 230, 0.5);
   color: #2D2E6F;
   border: 1px solid #2D2E6F;
+}
+
+.container_slider a {
+  color: #2D2E6F;
+  text-decoration: none;
+}
+.container_slider a:visited {
+  color: #2D2E6F;
+}
+.container_slider a:hover {
+  color: #5d5fdb;
 }
 
 .modal label {
@@ -108,9 +136,23 @@ footer i:hover {
 .box-somos .perro2 img {
   height: 100%;
 }
+.box-somos .mision, .box-somos .vision {
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.box-somos .mision:hover, .box-somos .vision:hover {
+  color: #5d5fdb !important;
+  box-shadow: 0 0 4px 4px #C9C1E6;
+}
 
 .actividades {
   background-color: rgba(201, 193, 230, 0.5);
+}
+.actividades .cajas {
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.actividades .cajas:hover {
+  color: #5d5fdb !important;
+  box-shadow: 0 0 4px 4px #C9C1E6;
 }
 
 .caja-final .perro img {
@@ -139,18 +181,34 @@ footer i:hover {
   border: solid 10px #F1D1FF;
   border-radius: 3px;
 }
+.caja-final .box1, .caja-final .box2, .caja-final .box3, .caja-final .box4 {
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.caja-final .box1:hover, .caja-final .box2:hover, .caja-final .box3:hover, .caja-final .box4:hover {
+  color: #5d5fdb !important;
+  box-shadow: 0 0 4px 4px #C9C1E6;
+}
 
 @media (min-width: 0px) and (max-width: 992px) {
-  header .custom-logo-link {
-    display: inline-block;
-    width: 200px;
-    height: auto;
-  }
   .none {
     display: none;
   }
   .box1, .box2 {
     height: auto !important;
+  }
+}
+@media (min-width: 441px) and (max-width: 992px) {
+  header .custom-logo-link {
+    display: inline-block;
+    width: 190px;
+    height: auto;
+  }
+}
+@media (min-width: 0px) and (max-width: 440px) {
+  header .custom-logo-link {
+    display: inline-block;
+    width: 150px;
+    height: auto;
   }
 }
 @media (min-width: 993px) and (max-width: 1371px) {

@@ -55,21 +55,21 @@ get_header();
 			<section class="col-12 p-5 actividades text-center">
 				<h3 class="fw-bold">Actividades que realizamos</h3>
 				<div class="d-flex p-5 flex-wrap">
-					<div class="col-12 col-lg-4 p-5">
+					<div class="col-12 col-lg-4 p-5 cajas">
 						<i class="fa-solid fa-people-line fs-1"></i>
 						<h4 class="fw-bold">Charlas</h4>
 						<p>Ofrecemos charlas sobre tenencia responsable en colegios y jardines infantiles para educar a los más jóvenes 
 							acerca del cuidado de los animales y promover un futuro más compasivo y responsable
 						</p>
 					</div>
-					<div class="col-12 col-lg-4 p-5">
+					<div class="col-12 col-lg-4 p-5 cajas">
 						<i class="fa-solid fa-bone fs-1"></i>
 						<h4 class="fw-bold">Jornadas de Adopción</h4>
 						<p>Nuestras jornadas de adopción son oportunidades emocionantes para encontrar un amigo peludo que necesite un hogar, 
 							brindándote un ambiente cálido y amigable para conocer a las mascotas en busca de una familia.
 						</p>
 					</div>
-					<div class="col-12 col-lg-4 p-5">
+					<div class="col-12 col-lg-4 p-5 cajas">
 						<i class="fa-solid fa-kit-medical fs-1"></i>
 						<h4 class="fw-bold">Esterilizaciones Masivas</h4>
 						<p>Las esterilizaciones son fundamentales para controlar la población de animales en situación de calle, 

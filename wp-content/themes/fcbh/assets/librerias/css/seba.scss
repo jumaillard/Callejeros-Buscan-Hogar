@@ -4,13 +4,21 @@ $bg-primario: #ffffff;
 $bg-secundario: rgba(201, 193, 230, 0.5);
 $texto: #2D2E6F;
 
-
 body{
     background-color: $bg-primario;
     color: $texto;
     font-family: $tipografia-parrafos;
     h1,h2,h3,h4,h5,h6{
         font-family: $tipografia-titulos;
+    }
+    .zoom{
+        transition: transform 0.3s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    a{
+        transition: color 0.3s ease-in-out;
     }
 }
 header{
@@ -36,6 +44,7 @@ header{
     }
     
 }
+
 footer{
     background-color: $bg-secundario;
     .aqui{
@@ -52,9 +61,17 @@ footer{
     }
     i{
         color: $texto;
+        transition: color 0.3s ease-in-out;
     }
     i:hover{
-        color: #000 ;
+        color: #5d5fdb;
+    }
+    a{
+        text-decoration: none;
+        color: $texto;
+    }
+    a:hover{
+        color: #5d5fdb;
     }
 }
 
@@ -67,6 +84,21 @@ footer{
     color: $texto;
     border: 1px solid $texto;
 
+}
+
+
+
+.container_slider{
+    a{
+        color: $texto;
+        text-decoration: none;
+    }
+    a:visited{
+        color: #2D2E6F;
+    }
+    a:hover{
+        color: #5d5fdb;
+    }
 }
 
 .modal{
@@ -130,10 +162,24 @@ footer{
             height: 100%;
         }
     }
+    .mision, .vision{
+        transition: color 0.3s ease-in-out, box-shadow  0.3s ease-in-out;
+    }
+    .mision:hover, .vision:hover{
+        color: #5d5fdb !important;
+        box-shadow: 0 0 4px 4px  #C9C1E6;
+    }
 }
 
 .actividades{
     background-color: $bg-secundario;
+    .cajas{
+        transition: color 0.3s ease-in-out, box-shadow  0.3s ease-in-out;
+    }
+    .cajas:hover{
+        color: #5d5fdb !important;
+        box-shadow: 0 0 4px 4px  #C9C1E6;
+    }
 }
 
 .caja-final{
@@ -164,6 +210,13 @@ footer{
         background-color: #f1d1ff59;
         border: solid 10px #F1D1FF;
         border-radius: 3px;
+    }
+    .box1, .box2,.box3,.box4{
+        transition: color 0.3s ease-in-out, box-shadow  0.3s ease-in-out;
+    }
+    .box1:hover, .box2:hover,.box3:hover,.box4:hover{
+        color: #5d5fdb !important;
+        box-shadow: 0 0 4px 4px  #C9C1E6;
     }
 }
 
