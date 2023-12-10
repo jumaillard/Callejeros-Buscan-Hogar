@@ -11,11 +11,12 @@
 
 <div class="row justify-content-center justify-content-lg-around my-5 mx-lg-5">
 	<div class="col-10 col-lg-4 text-center text-lg-start">
-	<h2><?php echo get_the_title();?></h2>
-    <p><?php echo the_content();?></p>
+	<h2><?php the_title();?></h2>
+        <?php the_content();?>
+
 	</div>
 	<div class="col-10 col-lg-6 row justify-content-center">
-		<form action="#">
+		
 		<div class="col-10 col-lg-5 my-3">
 			<label for="nombre" class="form-label fw-bold">Nombre:</label>
 		    <input class="form-control input_contacto" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
@@ -37,6 +38,6 @@
 		</div>
 
 		<input class="btn-enviar mt-5" type="submit" value="enviar mensaje" name="enviarmsje" id="enviarmsje">
-		</form>
+		
 	</div>
 </div>

@@ -76,7 +76,51 @@ wp_reset_postdata();
         </div>
     </div>
 </section>
+<?php
+// Obtiene la información de la página actual
+$current_page = get_queried_object();
 
+// Inicializa el array para almacenar los enlaces
+$links = array();
+
+// Agrega el enlace a la página de inicio
+$links[] = '<a href="' . esc_url(home_url('/')) . '" class="links_breadcrumb">Inicio</a>';
+
+// Verifica si estás en una página
+if (is_page()) {
+    // Agrega el enlace a la página actual al array
+    $links[] = '<a href="' . esc_url(get_permalink()) . '" class="links_breadcrumb fw-bold">' . esc_html($current_page->post_title) . '</a>';
+}
+
+// Verifica si estás en una categoría
+elseif (is_category()) {
+    // Obtiene la categoría actual
+    $category = get_category(get_query_var('cat'));
+
+    // Agrega el enlace a la categoría actual al array
+    $links[] = '<a href="' . esc_url(get_category_link($category->term_id)) . '" class="links_breadcrumb">' . esc_html($category->name) . '</a>';
+}
+
+// Verifica si estás en una entrada individual
+elseif (is_single()) {
+    // Obtiene las categorías de la entrada
+    $categories = get_the_category();
+
+    if (!empty($categories)) {
+        // Obtiene la primera categoría (puedes ajustar esto según tus necesidades)
+        $category = $categories[0];
+
+        // Agrega el enlace a la categoría de la entrada al array
+        $links[] = '<a href="' . esc_url(get_category_link($category->term_id)) . '" class="links_breadcrumb">' . esc_html($category->name) . '</a>';
+    }
+
+    // Agrega el enlace a la entrada individual al array
+    $links[] = '<a href="' . esc_url(get_permalink()) . '" class="links_breadcrumb">' . esc_html(get_the_title()) . '</a>';
+}
+
+// Muestra el elemento <p> con los enlaces
+echo '<p class="fs-4 ms-5 mt-5">' . implode(' / ', $links) . '</p>';
+?>
 
 	<section class="container pt-5 navbar navbar-expand-lg">
 		<button class="m-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -85,7 +129,7 @@ wp_reset_postdata();
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<div id="navbarNav"
-				class="collapse navbar-collapse filtros-adoptanos d-flex justify-content-md-around justify-content-around pt-4 pb-3">
+				class="collapse navbar-collapse filtros-adoptanos d-flex justify-content-md-around justify-content-around pb-3">
 				<ul class="navbar-nav">
 					<li class="nav-item p-2 p-md-5">
 						<a href="<?php echo esc_url(add_query_arg('categoria-animales', 'cachorro')); ?>"

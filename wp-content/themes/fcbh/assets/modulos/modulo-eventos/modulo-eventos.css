@@ -10,3 +10,32 @@
 .Celeste{
   background-color: #D1E7FF;
 }
+
+
+
+.pagination{
+  display: flex;
+  justify-content: end;
+}
+.page-numbers{
+  padding: 0 20px;
+  color: #2D2E6F !important;
+  font-family: 'Rubik', sans-serif !important;
+  text-decoration: none !important;
+  font-size: 22px;
+}
+.current{
+  font-weight: 700 !important;
+}
+.next, .prev{
+  border: 2px #2D2E6F solid !important;
+  padding: 2px 10px;
+  border-radius: 5px;
+  transition: .3s;
+  font-weight: 700;
+  background-color: #2D2E6F;
+  color: #ffff!important;
+}
+.next:hover, .prev:hover{
+  transform: scale(1.1);
+}

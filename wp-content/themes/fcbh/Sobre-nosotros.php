@@ -27,8 +27,51 @@ get_header();
 				</div>
 			</section>
 			<section class="col-12 p-5">
-				<p class="fs-4 ms-5">Inicio / <span class="fw-bold">¿Quiénes Somos?</span></p>
+			<?php
+// Obtiene la información de la página actual
+$current_page = get_queried_object();
 
+// Inicializa el array para almacenar los enlaces
+$links = array();
+
+// Agrega el enlace a la página de inicio
+$links[] = '<a href="' . esc_url(home_url('/')) . '" class="links_breadcrumb">Inicio</a>';
+
+// Verifica si estás en una página
+if (is_page()) {
+    // Agrega el enlace a la página actual al array
+    $links[] = '<a href="' . esc_url(get_permalink()) . '" class="links_breadcrumb fw-bold">¿ Quienes Somos?</a>';
+}
+
+// Verifica si estás en una categoría
+elseif (is_category()) {
+    // Obtiene la categoría actual
+    $category = get_category(get_query_var('cat'));
+
+    // Agrega el enlace a la categoría actual al array
+    $links[] = '<a href="' . esc_url(get_category_link($category->term_id)) . '" class="links_breadcrumb">' . esc_html($category->name) . '</a>';
+}
+
+// Verifica si estás en una entrada individual
+elseif (is_single()) {
+    // Obtiene las categorías de la entrada
+    $categories = get_the_category();
+
+    if (!empty($categories)) {
+        // Obtiene la primera categoría (puedes ajustar esto según tus necesidades)
+        $category = $categories[0];
+
+        // Agrega el enlace a la categoría de la entrada al array
+        $links[] = '<a href="' . esc_url(get_category_link($category->term_id)) . '" class="links_breadcrumb">' . esc_html($category->name) . '</a>';
+    }
+
+    // Agrega el enlace a la entrada individual al array
+    $links[] = '<a href="' . esc_url(get_permalink()) . '" class="links_breadcrumb">' . esc_html(get_the_title()) . '</a>';
+}
+
+// Muestra el elemento <p> con los enlaces
+echo '<p class="fs-4 ms-5">' . implode(' / ', $links) . '</p>';
+?>
 				<div class="col-10 d-flex mx-auto box-somos">
 					<div class="col-12 col-lg-8 d-flex flex-wrap text-center">
 						<div class="col-6 text-end perro1 none">

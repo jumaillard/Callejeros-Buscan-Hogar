@@ -909,3 +909,21 @@ input.btn-enviar:hover{
     text-align: center;
 }
 }
+
+
+a.links_breadcrumb{
+    color: #2D2E6F;
+    text-decoration: none;
+}
+
+a.links_breadcrumb:visited{
+    color: #2D2E6F;
+}
+
+a.links_breadcrumb:active{
+    color: #2D2E6F;
+}
+
+a.links_breadcrumb:hover{
+    border-bottom: solid 1px #2D2E6F;
+}
