@@ -76,6 +76,7 @@ wp_reset_postdata();
         </div>
     </div>
 </section>
+
 <?php
 // Obtiene la información de la página actual
 $current_page = get_queried_object();
@@ -121,15 +122,9 @@ elseif (is_single()) {
 // Muestra el elemento <p> con los enlaces
 echo '<p class="fs-4 ms-5 mt-5">' . implode(' / ', $links) . '</p>';
 ?>
-
 	<section class="container pt-5 navbar navbar-expand-lg">
-		<button class="m-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<div id="navbarNav"
-				class="collapse navbar-collapse filtros-adoptanos d-flex justify-content-md-around justify-content-around pb-3">
+			<div
+				class="filtros-adoptanos d-flex justify-content-md-around justify-content-around pt-4 pb-3 m-md-auto m-auto">
 				<ul class="navbar-nav">
 					<li class="nav-item p-2 p-md-5">
 						<a href="<?php echo esc_url(add_query_arg('categoria-animales', 'cachorro')); ?>"
@@ -155,11 +150,10 @@ echo '<p class="fs-4 ms-5 mt-5">' . implode(' / ', $links) . '</p>';
 								class="nav-link boton-filtro text-center text-white">Borrar Filtros</a></li>
 					<?php endif; ?>
 				</ul>
-			</div>
 		</div>
 	</section>
 	<div class="container">
-		<div class="row">
+		<div class="row col-md-12 col-10 m-auto m-md-0">
 			<?php include get_template_directory() . '/assets/modulos/modulo-animales/loop-animales.php'; ?>
 		</div>
 	</div>
@@ -171,8 +165,10 @@ echo '<p class="fs-4 ms-5 mt-5">' . implode(' / ', $links) . '</p>';
 				fueron rescatadas y adoptadas. Sus historias son un testimonio conmovedor de la importancia de darles
 				una
 				segunda oportunidad y el poder del amor y cuidado en su recuperación.</p>
-		</div>
+		<div class="col-10 col-md-12 offset-2">
 		<?php include get_template_directory() . '/assets/modulos/modulo-antes-despues/loop-antes.php'; ?>
+		</div>
+		</div>
 	</section>				
 
 </main><!-- #main -->

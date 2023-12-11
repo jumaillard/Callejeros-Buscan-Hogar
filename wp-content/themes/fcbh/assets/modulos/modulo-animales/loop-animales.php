@@ -44,7 +44,7 @@ $custom_query = new WP_Query($args);
     if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); //todo lo que este dentro de este loop, es la estructura que se mostrará?>
 
         <div class="col-12 col-md-4 mb-5">
-            <a href="<?php the_permalink(); ?>" class="boton-card-adoptanos">
+            <a href="<?php the_permalink(); ?>" class="boton-card-adoptanos w-50">
                 <div class="card card-adoptanos" style="width: 18rem;">
                     <img class="card-img-top" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="<?php the_title(); ?>">
                     <div class="card-body body-card-adoptanos">
@@ -58,7 +58,7 @@ $custom_query = new WP_Query($args);
             </a>
         </div>
     <?php endwhile; ?>
-        <div class="col-12 col-md-6 w-50 ">
+        <div class="col-6 col-md-12">
             <!-- Paginación -->
             <?php
             echo '<div class="pagination">';

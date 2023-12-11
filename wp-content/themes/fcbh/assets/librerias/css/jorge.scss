@@ -39,6 +39,7 @@ $poppins: "Poppins", sans-serif;
     }
 }
 
+
 .boton-filtro {
     background-color: #2D2E6F;
     padding: 10px;
@@ -65,8 +66,8 @@ $poppins: "Poppins", sans-serif;
         border-radius: 5px;
         text-align: start;
         line-height: 40px;
-        height: 40vh;
-        width: 50vh;
+        max-height: 40vh;
+        width: 54vh;
 
         .titulo-ficha {
             font-size: 32px;
@@ -128,4 +129,16 @@ $poppins: "Poppins", sans-serif;
 .slick-arrow i:hover{
     transform: scale(1.5);
     color: black;
+}
+.boton-adoptanos-form{
+    background-color: #2D2E6F;
+    color: white;
+    border-radius: 50px;
+    width: 183px;
+    transition: .3s;
+    font-family: $rubik;
+    font-size: 18px;
+}
+.boton-adoptanos-form:hover{
+    scale: (1.05);
 }

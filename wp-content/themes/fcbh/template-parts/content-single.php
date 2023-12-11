@@ -13,7 +13,7 @@
 	<section class="row contenedor-ficha mb-5">
 		<div class="col-12 col-md-6">
 			<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>"
-				alt="<?php the_title(); ?>" class="imagen-ficha ms-md-5 m-auto">
+				alt="Animalito en adopcion llamado <?php the_title(); ?>" class="imagen-ficha ms-md-5 m-auto">
 		</div>
 		<div class="col-12 col-md-6 contenido-ficha">
 			<p class="titulo-ficha">
@@ -38,8 +38,9 @@
 			</p>
 		</div>
 	</section>
+	<div id="formulario-container" class="row" style="display: none;">
 	<h4 class="mb-5 text-center ">Formulario de adopción</h4>
-	<form action="" class="row">
+	<form id="formulario-container" action="" class="">
 		<div class=" col-12 col-md-6">
 			<label for="nombre" class="form-label mb-1">Nombre:</label>
 			<input type="text" name="nombre" id="nombre" class="form-control mb-4">
@@ -109,7 +110,7 @@
 
 		<div class=" col-12 col-md-6">
 			<label for="mascotas" class="form-label mb-1">¿Actualmente tiene mascotas?</label>
-			<textarea name="familia" id="familia" cols="30" rows="5" class="form-control mb-4"></textarea>
+			<textarea name="mascotas" id="mascotas" cols="30" rows="5" class="form-control mb-4"></textarea>
 		</div>
 
 		<div class=" col-12 col-md-6">
@@ -147,5 +148,6 @@
 			<textarea name="tenencia" id="tenencia" cols="30" rows="5" class="form-control mb-4"></textarea>
 		</div>
 		<input type="submit" id="enviar" value="Enviar Formulario" class="col-6 col-md-2 m-auto m-md-auto mb-md-5">
-	</form>
+	</form></div>
+	<button id="aparecer-formulario" class="boton-adoptanos-form col-12 col-md-2 m-md-auto m-auto mb-md-5">¡ADOPTAME!</button>
 </article><!-- #post-<?php the_ID(); ?> -->
