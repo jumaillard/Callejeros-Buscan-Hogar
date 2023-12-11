@@ -13,7 +13,7 @@
 	<section class="row contenedor-ficha mb-5">
 		<div class="col-12 col-md-6">
 			<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>"
-				alt="Animalito en adopcion llamado <?php the_title(); ?>" class="imagen-ficha ms-md-5 m-auto">
+				alt="Animalito en adopcion llamado <?php the_title(); ?>" class="imagen-ficha ms-md-5 m-auto mb-4 mb-lg-0">
 		</div>
 		<div class="col-12 col-md-6 contenido-ficha">
 			<p class="titulo-ficha">
