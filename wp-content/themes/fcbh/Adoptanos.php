@@ -165,7 +165,7 @@ echo '<p class="fs-4 ms-5 mt-5">' . implode(' / ', $links) . '</p>';
 				fueron rescatadas y adoptadas. Sus historias son un testimonio conmovedor de la importancia de darles
 				una
 				segunda oportunidad y el poder del amor y cuidado en su recuperación.</p>
-		<div class="col-10 col-md-12 offset-2">
+		<div class="col-10 col-md-12 offset-2 offset-md-0">
 		<?php include get_template_directory() . '/assets/modulos/modulo-antes-despues/loop-antes.php'; ?>
 		</div>
 		</div>
