@@ -147,7 +147,7 @@
 			<label for="tenencia" class="form-label mb-1">¿Está al tanto de la tenencia responsable de mascotas?</label>
 			<textarea name="tenencia" id="tenencia" cols="30" rows="5" class="form-control mb-4"></textarea>
 		</div>
-		<input type="submit" id="enviar" value="Enviar Formulario" class="col-6 col-md-2 m-auto m-md-auto mb-md-5">
+		<input type="submit" id="enviar" value="Enviar Formulario" class="col-6 col-md-2 m-auto m-md-auto mb-md-5 mb-5">
 	</form></div>
-	<button id="aparecer-formulario" class="boton-adoptanos-form col-12 col-md-2 m-md-auto m-auto mb-md-5">¡ADOPTAME!</button>
+	<button id="aparecer-formulario" class="boton-adoptanos-form col-12 col-md-2 m-md-auto m-auto mb-md-5 mb-5">¡ADOPTAME!</button>
 </article><!-- #post-<?php the_ID(); ?> -->

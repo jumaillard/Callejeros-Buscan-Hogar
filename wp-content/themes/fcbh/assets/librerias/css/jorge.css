@@ -65,7 +65,7 @@
     flex-direction: row;
     align-content: center;
     padding: 5%;
-    margin-left: 5px; }
+    margin: auto; }
 
   .contenedor-ficha .contenido-ficha {
     height: 50vh; } }
