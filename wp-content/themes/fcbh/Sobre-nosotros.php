@@ -75,7 +75,7 @@ echo '<p class="fs-4 ms-5">' . implode(' / ', $links) . '</p>';
 				<div class="col-10 d-flex mx-auto box-somos">
 					<div class="col-12 col-lg-8 d-flex flex-wrap text-center">
 						<div class="col-6 text-end perro1 none">
-							<img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-2.png" alt="Perro">
+							<img src="<?php echo wp_upload_dir()['baseurl'] . '/2023/11/pngwing-2.png'; ?>" alt="Perro">
 						</div>
 						<div class="col-12 col-lg-6 mision p-5">
 							<h3>Misión</h3>
@@ -86,11 +86,11 @@ echo '<p class="fs-4 ms-5">' . implode(' / ', $links) . '</p>';
 							<p>Nuestra visión es crear un mundo en el que cada animal reciba el amor, cuidado y respeto que merece, y trabajamos incansablemente para lograrlo.</p>
 						</div>
 						<div class="col-6 gato text-center none">
-							<img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-3.png" alt="Gato">
+							<img src="<?php echo wp_upload_dir()['baseurl'] . '/2023/11/pngwing-3.png'; ?>" alt="Gato">
 						</div>
 					</div>
 						<div class="col-4 perro2 none">
-							<img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/Black-Dog-PNG-High-Quality-Image-1.png" alt="Perro">
+							<img src="<?php echo wp_upload_dir()['baseurl'] . '/2023/11/Black-Dog-PNG-High-Quality-Image-1.png'; ?>" alt="Perro">
 						</div>
 				</div>
 			</section>
@@ -125,7 +125,7 @@ echo '<p class="fs-4 ms-5">' . implode(' / ', $links) . '</p>';
 				<h3 class="text-center my-5 fw-bold">¿Cómo Ayudar?</h3>
 				<div class="col-10 mx-auto d-flex flex-wrap caja-final">
 					<div class="col-lg-4 perro none none2">
-						<img src="http://localhost/fundacion-cbh/wp-content/uploads/2023/11/pngwing-1.png" alt="Perro">
+						<img src="<?php echo wp_upload_dir()['baseurl'] . '/2023/11/pngwing-1.png'; ?>" alt="Perro">
 					</div>
 					<div class="col-lg-8 d-flex flex-wrap text-center custom-lg-size">
 						<div class="col-12 col-lg-5 p-5 box1 mx-lg-5">
