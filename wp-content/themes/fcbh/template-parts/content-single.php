@@ -38,7 +38,7 @@
 			</p>
 		</div>
 	</section>
-	<div id="formulario-container" class="row" style="display: none;">
+	<div id="formulario-container" class="row m-auto m-md-auto" style="display: none;">
 	<h4 class="mb-5 text-center ">Formulario de adopción</h4>
 	<form id="formulario-container" action="" class="">
 		<div class=" col-12 col-md-6">

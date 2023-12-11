@@ -4,6 +4,5 @@ jQuery(document).ready(function ($) {
   });
   $('#aparecer-formulario').on('click', function(){
     $('#formulario-container').toggle();
-    $('#formulario-container').css('transition', '.3s');
   });
 });
